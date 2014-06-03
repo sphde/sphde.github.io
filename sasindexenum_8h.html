@@ -64,6 +64,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return status of a SASIndexEnum_t enumeration.  <a href="#a260a397fc45cc195e5316ec9e52202da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasindexenum_8h.html#a7bc8b8c986ee813fdbe077329d997eee">SASIndexEnumNext</a> (<a class="el" href="sasindexenum_8h.html#a814f1df2e3490a3846761caa3a465c58">SASIndexEnum_t</a> indexenum)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Move the enumeration to the next binary BTree Index key entry and return the associated address value.  <a href="#a7bc8b8c986ee813fdbe077329d997eee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasindexenum_8h.html#a25395ed0f961c8f25353cc10f8f2c14e">SASIndexEnumNext_nolock</a> (<a class="el" href="sasindexenum_8h.html#a814f1df2e3490a3846761caa3a465c58">SASIndexEnum_t</a> indexenum)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Move the enumeration to the next binary BTree Index key entry and return the associated address value.  <a href="#a25395ed0f961c8f25353cc10f8f2c14e"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Enumeration API for iteration over Shared Address Space binary B-tree index defined in <a class="el" href="sasindex_8h.html" title="Shared Address Space B-tree based on binary values including virtual addresses.">sasindex.h</a>. For use by shared memory multi-thread/multi-core applications. </p>
@@ -212,6 +214,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a25395ed0f961c8f25353cc10f8f2c14e"></a><!-- doxytag: member="sasindexenum.h::SASIndexEnumNext_nolock" ref="a25395ed0f961c8f25353cc10f8f2c14e" args="(SASIndexEnum_t indexenum)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ void* SASIndexEnumNext_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasindexenum_8h.html#a814f1df2e3490a3846761caa3a465c58">SASIndexEnum_t</a>&nbsp;</td>
+          <td class="paramname"> <em>indexenum</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Move the enumeration to the next binary BTree Index key entry and return the associated address value. </p>
+<p>This nolock form should only be used when the referenced SASIndex_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>indexenum</em>&nbsp;</td><td>binary BTree enumeration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>the address value associated for the next String BTree enumeration. </dd></dl>
+
+</div>
+</div>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -227,7 +257,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 10 Mar 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -83,24 +83,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Internal function that returns the root SASStringBTreeNode_t node for <em>btree</em> B-Tree.  <a href="#a656e5c1389eb1b09a3edcb1e26775eae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#abf943b5211242f9778b0aed5e80e64ee">SASStringBTreeGetModCount</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the number or insert/replace/remove operations performed on <em>btree</em>.  <a href="#abf943b5211242f9778b0aed5e80e64ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a35b6be05a467430e821e69854e0eafb8">SASStringBTreeGetModCount_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the number or insert/replace/remove operations performed on <em>btree</em>.  <a href="#a35b6be05a467430e821e69854e0eafb8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#aa1a05ee5727c5f91c2398fbde43ecfab">SASStringBTreeGetMaxKey</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the maximum key string from <em>btree</em>.  <a href="#aa1a05ee5727c5f91c2398fbde43ecfab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a6886b7194f68d976f6492db5b47c0ff5">SASStringBTreeGetMaxKey_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the maximum key string from <em>btree</em>.  <a href="#a6886b7194f68d976f6492db5b47c0ff5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#ad7277e71a2da1e0cb866f409a85d99ec">SASStringBTreeGetMinKey</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the minimum key string from <em>btree</em>.  <a href="#ad7277e71a2da1e0cb866f409a85d99ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a6fc85cd8ff4fae66bd95d34e88c52b39">SASStringBTreeGetMinKey_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the minimum key string from <em>btree</em>.  <a href="#a6fc85cd8ff4fae66bd95d34e88c52b39"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#ae35a88078ed7b9d5facfb52fad4b4e1c">SASStringBTreeContainsKey</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return true if the SAS B-Tree <em>btree</em> contains the key <em>key</em>.  <a href="#ae35a88078ed7b9d5facfb52fad4b4e1c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#ad39d01aba5c8caf0fe6188262fe8d022">SASStringBTreeContainsKey_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return true if the SAS B-Tree <em>btree</em> contains the key <em>key</em>.  <a href="#ad39d01aba5c8caf0fe6188262fe8d022"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a8d45dfc06a9ef34189a2c60dc118c4fd">SASStringBTreeGet</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the memory address value associated with <em>key</em> in SAS B-Tree <em>btree</em>.  <a href="#a8d45dfc06a9ef34189a2c60dc118c4fd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a6d5cf95d189ce960997f7e971052e8de">SASStringBTreeGet_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the memory address value associated with <em>key</em> in SAS B-Tree <em>btree</em>.  <a href="#a6d5cf95d189ce960997f7e971052e8de"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a719503cbd23fbcf43baee9b42395dc45">SASStringBTreeIsEmpty</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return true if the SAS B-Tree <em>btree</em> is empty.  <a href="#a719503cbd23fbcf43baee9b42395dc45"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a82f75937ae4b7ab7f86cc74588f5eb43">SASStringBTreeIsEmpty_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return true if the SAS B-Tree <em>btree</em> is empty.  <a href="#a82f75937ae4b7ab7f86cc74588f5eb43"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a3c9581bdfa480dca0c7fcb33f6d5012c">SASStringBTreeGetCurCount</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the number of elements in the SAS B-Tree <em>btree</em>.  <a href="#a3c9581bdfa480dca0c7fcb33f6d5012c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#adaad85a27d54f5db1154f2726355fadd">SASStringBTreePut</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key, void *value)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new element <em>value</em> with key <em>key</em> in the SAS B-Tree <em>btree</em>.  <a href="#adaad85a27d54f5db1154f2726355fadd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#ac3eb7ef23bb1a895eb97c7d12b6db6fa">SASStringBTreePut_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key, void *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add a new element <em>value</em> with key <em>key</em> in the SAS B-Tree <em>btree</em>.  <a href="#ac3eb7ef23bb1a895eb97c7d12b6db6fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#aa865d7257ff04daa292631888e9df148">SASStringBTreeReplace</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key, void *value)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Replace the associated value of the element with key <em>key</em> in SAS B-Tree <em>btree</em> with the value <em>value</em>.  <a href="#aa865d7257ff04daa292631888e9df148"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#ac84410adcaf7dec196af7576611b845c">SASStringBTreeReplace_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key, void *value)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Replace the associated value of the element with key <em>key</em> in SAS B-Tree <em>btree</em> with the value <em>value</em>.  <a href="#ac84410adcaf7dec196af7576611b845c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a8db803794ca5c47593b4d26080c0dc08">SASStringBTreeRemove</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Remove the key <em>key</em> and its associated value from SAS B-Tree <em>btree</em>.  <a href="#a8db803794ca5c47593b4d26080c0dc08"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#a1925726e2351c8d362c30064d5141fc7">SASStringBTreeRemove_nolock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree, char *key)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Remove the key <em>key</em> and its associated value from SAS B-Tree <em>btree</em>.  <a href="#a1925726e2351c8d362c30064d5141fc7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ <a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#adbb1c623dbc0e16626ec05d48d32e025">SASStringBTreeInit</a> (void *block, block_size_t block_size, block_size_t page_size, int expanding)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Internal function to initialize storage as a B-tree.  <a href="#adbb1c623dbc0e16626ec05d48d32e025"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtree_8h.html#ac821ba4339f1dcce9e68fdbb99097c66">SASStringBTreeDestroyNoLock</a> (<a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a> btree)</td></tr>
@@ -134,7 +152,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="stringliteral">   }</span>
 </pre></div><p>The helper functions <a class="el" href="sasstringbtree_8h.html#adaad85a27d54f5db1154f2726355fadd" title="Add a new element value with key key in the SAS B-Tree btree.">SASStringBTreePut</a>, <a class="el" href="sasstringbtree_8h.html#aa865d7257ff04daa292631888e9df148" title="Replace the associated value of the element with key key in SAS B-Tree btree with...">SASStringBTreeReplace</a>, and <a class="el" href="sasstringbtree_8h.html#a8db803794ca5c47593b4d26080c0dc08" title="Remove the key key and its associated value from SAS B-Tree btree.">SASStringBTreeRemove</a> can be used to insert, replace and remove a string/pointer tuple from SBT. Others useful functions are <a class="el" href="sasstringbtree_8h.html#ae35a88078ed7b9d5facfb52fad4b4e1c" title="Return true if the SAS B-Tree btree contains the key key.">SASStringBTreeContainsKey</a>, which returns if a key exists; and <a class="el" href="sasstringbtree_8h.html#a8d45dfc06a9ef34189a2c60dc118c4fd" title="Return the memory address value associated with key in SAS B-Tree btree.">SASStringBTreeGet</a>, which returns the value of a key.</p>
 <p>The enumeration API from <a class="el" href="sasstringbtreeenum_8h.html" title="An enumeration over a Shared Address Space, C String BTree index for shared memory...">sasstringbtreeenum.h</a> can be use to iterate over the (in whole or part) of contents of BTree in key order.</p>
-<p>Finally, a created SAS B-Tree can be destroy with <a class="el" href="sasstringbtree_8h.html#af31cd2aa918dafab351b9beb3964a67d" title="Destroy the SAS B-Tree btree.">SASStringBTreeDestroy</a>. </p>
+<p>The functions above apply SASLock and SASUnlock around each string operation to insure consistency of the string.</p>
+<p>If at process needs exclusive access or needs to scan or populate a string quickly, the application can SASLock the SASStringBTree_t, then use the *_nolock forms of the function above for faster access. </p>
+<div class="fragment"><pre class="fragment"> <a class="code" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c" title="Handle to an instance of String B-tree.">SASStringBTree_t</a> stringBTree;
+ <a class="code" href="sasstringbtreeenum_8h.html#a9e7b23ad7dbffb89db6379bd367835b2" title="Handle to an instance of String BTree Enumeration.">SASStringBTreeEnum_t</a> senum;
+ <span class="keywordtype">char</span> *keyref;
+
+ <a class="code" href="saslock_8h.html#a554c10c18c84297ce7a2ef91b1c4af42" title="Lock a SAS Address.">SASLock</a> (stringBTree, SasUserLock__READ);
+ senum = <a class="code" href="sasstringbtreeenum_8h.html#a5eb18be40254382765a563bae562a8fe" title="Create a SASStringBTreeEnum_t enumeration that can be used to iterate over the name...">SASStringBTreeEnumCreate</a> (stringBTree);
+ <span class="keywordflow">if</span> (!senum)
+ {
+   printf (<span class="stringliteral">&quot;SASStringBTreeEnumCreate (%p) failed&quot;</span>, stringBTree);
+   <span class="keywordflow">return</span> 1;
+ }
+
+ <span class="keywordflow">while</span> (<a class="code" href="sasstringbtreeenum_8h.html#a992020577bb8c672562ef00282bf79d2" title="Return status of a SASStringBTreeEnum_t enumeration.">SASStringBTreeEnumHasMore</a> (senum))
+   {
+     keyref = ((<span class="keywordtype">char</span> *) <a class="code" href="sasstringbtreeenum_8h.html#a7118b6a31c23234c79cb2776bc194f59" title="Move the enumeration to the next String BTree key entry and return the associated...">SASStringBTreeEnumNext_nolock</a> (senum);
+     <span class="keywordflow">if</span> (keyref)
+     {
+       <span class="comment">// process reference value associated with next enum</span>
+     }
+   }
+ <a class="code" href="saslock_8h.html#a33b8c7a9a5f493c42c8d4619e24a46d2" title="UnLock a SAS Address.">SASUnlock</a> (stringBTree);
+</pre></div><p>Finally, a created SAS B-Tree can be destroy with <a class="el" href="sasstringbtree_8h.html#af31cd2aa918dafab351b9beb3964a67d" title="Destroy the SAS B-Tree btree.">SASStringBTreeDestroy</a> </p>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="a23f34dcc67ecebd0713d04357f60b93c"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTree_t" ref="a23f34dcc67ecebd0713d04357f60b93c" args="" -->
 <div class="memitem">
@@ -264,6 +305,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Return true if the SAS B-Tree <em>btree</em> contains the key <em>key</em>. </p>
 <p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. The function holds a read lock over B-Tree <em>btree</em>. This function searches the B-Tree for a matching key and returns true if found.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td>Null terminated key string to search. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>1 if the key is within <em>btree</em> or 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad39d01aba5c8caf0fe6188262fe8d022"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeContainsKey_nolock" ref="ad39d01aba5c8caf0fe6188262fe8d022" args="(SASStringBTree_t btree, char *key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ int SASStringBTreeContainsKey_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>key</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return true if the SAS B-Tree <em>btree</em> contains the key <em>key</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. This function searches the B-Tree for a matching key and returns true if found.</p>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
@@ -619,6 +699,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a6d5cf95d189ce960997f7e971052e8de"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGet_nolock" ref="a6d5cf95d189ce960997f7e971052e8de" args="(SASStringBTree_t btree, char *key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ void* SASStringBTreeGet_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>key</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the memory address value associated with <em>key</em> in SAS B-Tree <em>btree</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. This function searches the B-Tree for a matching key and if found, returns the associated memory address value.</p>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td>Null terminated key string to search. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The associated memory address with <em>key</em> or 0 if the B-Tree <em>btree</em> does not contain the key or if an error occurs. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a3c9581bdfa480dca0c7fcb33f6d5012c"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGetCurCount" ref="a3c9581bdfa480dca0c7fcb33f6d5012c" args="(SASStringBTree_t btree)" -->
 <div class="memitem">
 <div class="memproto">
@@ -676,6 +795,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a6886b7194f68d976f6492db5b47c0ff5"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGetMaxKey_nolock" ref="a6886b7194f68d976f6492db5b47c0ff5" args="(SASStringBTree_t btree)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ char* SASStringBTreeGetMaxKey_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the maximum key string from <em>btree</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. The maximum key is the right most entry of the right most node.</p>
+<dl class="note"><dt><b>Note:</b></dt><dd>this value it stored in the header of the SASStringBTree_t initial block and should never be modified by the application.</dd></dl>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Null terminated maximum key string from B-Tree <em>btree</em> or 0 if the B-Tree does not have any key or if an error occurs. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad7277e71a2da1e0cb866f409a85d99ec"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGetMinKey" ref="ad7277e71a2da1e0cb866f409a85d99ec" args="(SASStringBTree_t btree)" -->
 <div class="memitem">
 <div class="memproto">
@@ -705,6 +854,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a6fc85cd8ff4fae66bd95d34e88c52b39"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGetMinKey_nolock" ref="a6fc85cd8ff4fae66bd95d34e88c52b39" args="(SASStringBTree_t btree)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ char* SASStringBTreeGetMinKey_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the minimum key string from <em>btree</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. The minimum key is the left most entry of the left most node.</p>
+<dl class="note"><dt><b>Note:</b></dt><dd>this value it stored in the header of the SASStringBTree_t initial block and should never be modified by the application.</dd></dl>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Null terminated minimum key string from B-Tree <em>btree</em> or 0 if the B-Tree does not have any key or if an error occurs. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abf943b5211242f9778b0aed5e80e64ee"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGetModCount" ref="abf943b5211242f9778b0aed5e80e64ee" args="(SASStringBTree_t btree)" -->
 <div class="memitem">
 <div class="memproto">
@@ -723,6 +902,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Return the number or insert/replace/remove operations performed on <em>btree</em>. </p>
 <p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. The function holds a read lock over B-Tree <em>btree</em>. An initialized SAS B-Tree starts with mod count 1 and it is incremented each time a insert/replace/remove operation is performed.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The number of insert/replace/remove operations performed on <em>btree</em>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a35b6be05a467430e821e69854e0eafb8"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeGetModCount_nolock" ref="a35b6be05a467430e821e69854e0eafb8" args="(SASStringBTree_t btree)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ long SASStringBTreeGetModCount_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the number or insert/replace/remove operations performed on <em>btree</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. An initialized SAS B-Tree starts with mod count 1 and it is incremented each time a insert/replace/remove operation is performed.</p>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
@@ -859,6 +1067,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Return true if the SAS B-Tree <em>btree</em> is empty. </p>
 <p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. The function holds a read lock over B-Tree <em>btree</em>.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>1 if the B-Tree is not empty or 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82f75937ae4b7ab7f86cc74588f5eb43"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeIsEmpty_nolock" ref="a82f75937ae4b7ab7f86cc74588f5eb43" args="(SASStringBTree_t btree)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ int SASStringBTreeIsEmpty_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return true if the SAS B-Tree <em>btree</em> is empty. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE.</p>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
@@ -1025,6 +1262,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="ac3eb7ef23bb1a895eb97c7d12b6db6fa"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreePut_nolock" ref="ac3eb7ef23bb1a895eb97c7d12b6db6fa" args="(SASStringBTree_t btree, char *key, void *value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ int SASStringBTreePut_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a new element <em>value</em> with key <em>key</em> in the SAS B-Tree <em>btree</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. This function inserts the key and associated memory address value into the B-Tree. This B-Tree implementation does not allow duplicated key values.</p>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td>Key to use as index for the value. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Memory address to insert in the B-Tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>1 if the operation succeeds or 0 otherwise. For example if the key already exist in this B-Tree. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8db803794ca5c47593b4d26080c0dc08"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeRemove" ref="a8db803794ca5c47593b4d26080c0dc08" args="(SASStringBTree_t btree, char *key)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1053,6 +1336,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Remove the key <em>key</em> and its associated value from SAS B-Tree <em>btree</em>. </p>
 <p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. The function holds a write lock over B-Tree <em>btree</em>. This function searches the B-Tree for a matching key and if found, removes the key and associates value from this B-Tree.</p>
 <dl class="note"><dt><b>Note:</b></dt><dd>removing the key and associated value from the B-Tree does not remove or alter the data at that memory address. It only removes the associated between the and key and the address from this B-Tree.</dd></dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td>Key value to be removed from this B-Tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The address of the previous item or 0 if an error occurs. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1925726e2351c8d362c30064d5141fc7"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeRemove_nolock" ref="a1925726e2351c8d362c30064d5141fc7" args="(SASStringBTree_t btree, char *key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ void* SASStringBTreeRemove_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>key</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Remove the key <em>key</em> and its associated value from SAS B-Tree <em>btree</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. This function searches the B-Tree for a matching key and if found, removes the key and associates value from this B-Tree.</p>
+<dl class="note"><dt><b>Note:</b></dt><dd>removing the key and associated value from the B-Tree does not remove or alter the data at that memory address. It only removes the associated between the and key and the address from this B-Tree.</dd></dl>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
@@ -1109,6 +1432,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="ac84410adcaf7dec196af7576611b845c"></a><!-- doxytag: member="sasstringbtree.h::SASStringBTreeReplace_nolock" ref="ac84410adcaf7dec196af7576611b845c" args="(SASStringBTree_t btree, char *key, void *value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ void* SASStringBTreeReplace_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtree_8h.html#a23f34dcc67ecebd0713d04357f60b93c">SASStringBTree_t</a>&nbsp;</td>
+          <td class="paramname"> <em>btree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Replace the associated value of the element with key <em>key</em> in SAS B-Tree <em>btree</em> with the value <em>value</em>. </p>
+<p>The sas_type_t must be SAS_RUNTIME_STRINGTREE. This function searches the B-Tree for a matching key and if found, replaces the associated memory address value with <em>value</em>, and returns the previous associated value.</p>
+<p>This nolock form should only be used when the referenced SASStringBTree_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>btree</em>&nbsp;</td><td>Handle to the SASStringBTree_t. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>key</em>&nbsp;</td><td>Key to use as index for the value. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Memory address to replace in the B-Tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The address of the previous associated value for the matching key, or 0 if an error occurs. </dd></dl>
+
+</div>
+</div>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1124,7 +1493,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 10 Mar 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

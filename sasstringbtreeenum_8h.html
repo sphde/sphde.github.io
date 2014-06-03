@@ -70,6 +70,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the C string pointer for the current enumeration key value.  <a href="#a080b4312b3b78d62568772ae3806142e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtreeenum_8h.html#a25fcd0f1d2f7b1b02769ae5499a98353">SASStringBTreeEnumNext</a> (<a class="el" href="sasstringbtreeenum_8h.html#a9e7b23ad7dbffb89db6379bd367835b2">SASStringBTreeEnum_t</a> sbtenum)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Move the enumeration to the next String BTree key entry and return the associated address value.  <a href="#a25fcd0f1d2f7b1b02769ae5499a98353"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasstringbtreeenum_8h.html#a7118b6a31c23234c79cb2776bc194f59">SASStringBTreeEnumNext_nolock</a> (<a class="el" href="sasstringbtreeenum_8h.html#a9e7b23ad7dbffb89db6379bd367835b2">SASStringBTreeEnum_t</a> sbtenum)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Move the enumeration to the next String BTree key entry and return the associated address value.  <a href="#a7118b6a31c23234c79cb2776bc194f59"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>An enumeration over a Shared Address Space, C String BTree index for shared memory multi-thread/multi-core applications. </p>
@@ -361,6 +363,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 </div>
+<a class="anchor" id="a7118b6a31c23234c79cb2776bc194f59"></a><!-- doxytag: member="sasstringbtreeenum.h::SASStringBTreeEnumNext_nolock" ref="a7118b6a31c23234c79cb2776bc194f59" args="(SASStringBTreeEnum_t sbtenum)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ void* SASStringBTreeEnumNext_nolock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="sasstringbtreeenum_8h.html#a9e7b23ad7dbffb89db6379bd367835b2">SASStringBTreeEnum_t</a>&nbsp;</td>
+          <td class="paramname"> <em>sbtenum</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Move the enumeration to the next String BTree key entry and return the associated address value. </p>
+<p>The corresponding C string key value can be obtained via <a class="el" href="sasstringbtreeenum_8h.html#a080b4312b3b78d62568772ae3806142e" title="Return the C string pointer for the current enumeration key value.">SASStringBTreeEnumCurrent()</a></p>
+<p>This nolock form should only be used when the referenced SASStringBTreeEnum_t is known to be locked by the application or contained within a larger structure with a controlling lock.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sbtenum</em>&nbsp;</td><td>String BTree enumeration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>the address value associated for the next String BTree enumeration. </dd></dl>
+
+</div>
+</div>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -376,7 +407,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 10 Mar 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
