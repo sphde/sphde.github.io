@@ -59,6 +59,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the Region's lowest memory address.  <a href="#a9ee7be9d68e029d74d6c710c6693bdbb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sassim_8h.html#a6a2371a5b9bb2b4e7acf2fc7385359e4">getMemHigh</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the Region's highest memory address.  <a href="#a6a2371a5b9bb2b4e7acf2fc7385359e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">__C__ void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sassim_8h.html#a0db2f431926798a96ec7f96ecaa1c7da">setSASmemrange</a> (unsigned long low, unsigned long high)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the Region's low/high memory address for testing.  <a href="#a0db2f431926798a96ec7f96ecaa1c7da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sassim_8h.html#afe2261a12b0eab211c7674873cf90ebd">SASJoinRegion</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Join this process to a SAS Region.  <a href="#afe2261a12b0eab211c7674873cf90ebd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">__C__ int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sassim_8h.html#a2b000ff09648bb379c63cdcb85613010">SASJoinRegionByName</a> (const char *store_name)</td></tr>
@@ -750,6 +752,42 @@ Threaded applications should pthread_join their child threads before this call. 
 
 </div>
 </div>
+<a class="anchor" id="a0db2f431926798a96ec7f96ecaa1c7da"></a><!-- doxytag: member="sassim.h::setSASmemrange" ref="a0db2f431926798a96ec7f96ecaa1c7da" args="(unsigned long low, unsigned long high)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__C__ void setSASmemrange </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>high</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the Region's low/high memory address for testing. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>low</em>&nbsp;</td><td>defines the regions starting address. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>high</em>&nbsp;</td><td>defines the regions ending address. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="aea3f2fe03f4b74be814ce6bc59d54e4c"></a><!-- doxytag: member="sassim.h::sasClearOnDealloc" ref="aea3f2fe03f4b74be814ce6bc59d54e4c" args="" -->
 <div class="memitem">
@@ -782,7 +820,7 @@ Threaded applications should pthread_join their child threads before this call. 
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 7 Jan 2015 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

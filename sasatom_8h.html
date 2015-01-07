@@ -56,6 +56,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#af3475ce180ff0fad6f8163c424f585bf">sas_write_barrier</a>()&nbsp;&nbsp;&nbsp;__arch_sas_write_barrier()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a64910ebba62c6ce2bc82eaa4bb17bde0">sas_read_barrier</a>()&nbsp;&nbsp;&nbsp;__arch_sas_read_barrier()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a23ea802b4b3371dfc2aad1714298dc1e">sas_full_barrier</a>()&nbsp;&nbsp;&nbsp;__arch_sas_full_barrier()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a1191b5a8a79783faade0540030ad2092">sas_code_barrier</a>()&nbsp;&nbsp;&nbsp;__asm (&quot;&quot; ::: &quot;memory&quot;)</td></tr>
 <tr><td colspan="2"><h2>Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a5ccf0530ea778f2625162ce5e3a55fdd">sas_spin_lock_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a47412df622b218565544740c4ab58760">sas_lock_ptr_t</a></td></tr>
@@ -85,6 +86,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Type and functions for SAS atomic operations. </p>
 <p>This file contains generic SAS atomic functions. Architecture specific code is in its correpondent header ('sasatom_ppc.h' for PowerPC32 and PowerPC64, 'sasatom_i386.h' for i386, and 'sasatom_x86_64.h' for X86_64). The 'sasatom_generic.h' header is provided as reference implementation and it is not garanted to work correctly. </p>
 <hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a1191b5a8a79783faade0540030ad2092"></a><!-- doxytag: member="sasatom.h::sas_code_barrier" ref="a1191b5a8a79783faade0540030ad2092" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sas_code_barrier</td>
+          <td>(</td>
+&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;__asm (&quot;&quot; ::: &quot;memory&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Memory barrier for compiler code motion. </p>
+
+</div>
+</div>
 <a class="anchor" id="a23ea802b4b3371dfc2aad1714298dc1e"></a><!-- doxytag: member="sasatom.h::sas_full_barrier" ref="a23ea802b4b3371dfc2aad1714298dc1e" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -637,7 +657,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 7 Jan 2015 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -86,7 +86,7 @@ typedef unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a cla
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#a3052fc2a29adc1f2399b639d64b6dc3e">SPHLFEntryWeakComplete</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handlespace)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. No memory barriers are performance. On out-of-order machines there are no guarantee that all previous stores by this thread are visible to other threads.  <a href="#a3052fc2a29adc1f2399b639d64b6dc3e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#ab4f0490fd573268981e663376dea9dab">SPHLFEntryComplete</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handlespace)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete. On out-of-order machines this barrier does not guarantee that all previous stores by this thread are visible to other threads.  <a href="#ab4f0490fd573268981e663376dea9dab"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete.  <a href="#ab4f0490fd573268981e663376dea9dab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#a825c822dfc17bfe82f266050f0260550">SPHLFEntryIsComplete</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handlespace)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the status of the entry specified by the entry handle.  <a href="#a825c822dfc17bfe82f266050f0260550"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#ae90b6a7e1e217e2e7daf51871f82ec79">SPHLFEntryIsTimestamped</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handlespace)</td></tr>
@@ -104,7 +104,7 @@ typedef unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a cla
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#aa6f8e328cc3e33d48f65c43dcc330e5c">SPHLFEntrySubcat</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handlespace)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the entry sub-category for the entry specified by the entry handle.  <a href="#aa6f8e328cc3e33d48f65c43dcc330e5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#a9fc0c1889e144b8685a0d29fb2e0ce2b">SPHLFEntryGetFreePtr</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handle)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the address first free byte for the entry specified by the entry handle.  <a href="#a9fc0c1889e144b8685a0d29fb2e0ce2b"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the first free byte address for the entry specified by the entry handle.  <a href="#a9fc0c1889e144b8685a0d29fb2e0ce2b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#acdc805c726caece2e847454ca1f0ca71">SPHLFEntryGetStructPtr</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handle, unsigned long __size, unsigned long __align)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the correctly aligned pointer for a struct or array starting at the next free location within the entry.  <a href="#acdc805c726caece2e847454ca1f0ca71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlfentry_8h.html#ac480455014963810f46dee07cddf6231">SPHLFEntryAllocStruct</a> (<a class="el" href="structSPHLFEntryHandle__t.html">SPHLFEntryHandle_t</a> *handle, unsigned long __size, unsigned long __align)</td></tr>
@@ -576,7 +576,7 @@ typedef unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a cla
 </div>
 <div class="memdoc">
 
-<p>Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete. On out-of-order machines this barrier does not guarantee that all previous stores by this thread are visible to other threads. </p>
+<p>Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>handlespace</em>&nbsp;</td><td>Entry Handle for an allocated entry. </td></tr>
@@ -603,7 +603,7 @@ typedef unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a cla
 </div>
 <div class="memdoc">
 
-<p>Return the address first free byte for the entry specified by the entry handle. </p>
+<p>Return the first free byte address for the entry specified by the entry handle. </p>
 <dl class="warning"><dt><b>Warning:</b></dt><dd>This function should be used carefully. It is not safe to use if other application functions may need to update the same entry. It is also not safe to use for software that needs to cross platform because it does not handle platform specific size and alignment requirements.</dd></dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>The SPHLOGENTRYALLOCSTRUCT/SPHLFlogEntryAllocStruct API is recommended for code that needs to operate cross platform.</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
@@ -1163,7 +1163,7 @@ typedef unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a cla
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 7 Jan 2015 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -81,6 +81,9 @@ Here is a list of all documented file members with links to the documentation:
 <li>sas_atomic_inc_long()
 : <a class="el" href="sasatom_8h.html#aef85633711bd4eacf2577eb500c69e6a">sasatom.h</a>
 </li>
+<li>sas_code_barrier
+: <a class="el" href="sasatom_8h.html#a1191b5a8a79783faade0540030ad2092">sasatom.h</a>
+</li>
 <li>sas_full_barrier
 : <a class="el" href="sasatom_8h.html#a23ea802b4b3371dfc2aad1714298dc1e">sasatom.h</a>
 </li>
@@ -723,6 +726,9 @@ Here is a list of all documented file members with links to the documentation:
 <li>setSASFinder()
 : <a class="el" href="sassim_8h.html#a18dd30e5346f63f060cb0374c05921a2">sassim.h</a>
 </li>
+<li>setSASmemrange()
+: <a class="el" href="sassim_8h.html#a0db2f431926798a96ec7f96ecaa1c7da">sassim.h</a>
+</li>
 <li>sph_cpu_frequency
 : <a class="el" href="sphtimer_8h.html#a364eaec71a1f6d77431ae36bcbd6a96d">sphtimer.h</a>
 </li>
@@ -839,6 +845,33 @@ Here is a list of all documented file members with links to the documentation:
 </li>
 <li>SPHLFEntryComplete()
 : <a class="el" href="sphlfentry_8h.html#ab4f0490fd573268981e663376dea9dab">sphlfentry.h</a>
+</li>
+<li>SPHLFEntryDirect_t
+: <a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectCategory()
+: <a class="el" href="sphdirectpcqueue_8h.html#a13025380ee0723957e9709a59bc9bdfe">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectComplete()
+: <a class="el" href="sphdirectpcqueue_8h.html#a0870fbd111ff161e696d4582b2b04759">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectGetFreePtr()
+: <a class="el" href="sphdirectpcqueue_8h.html#a873945ea6ab74626e7ea1cc293bd0d03">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectGetPtrAligned()
+: <a class="el" href="sphdirectpcqueue_8h.html#a9c05f176d4d3ced51f47ccd7c318c088">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectIncAndAlign()
+: <a class="el" href="sphdirectpcqueue_8h.html#aa5cdfd616e0f427f57f7103c3c15b243">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectIsComplete()
+: <a class="el" href="sphdirectpcqueue_8h.html#a23788fc67715bb71768a4fefbeecdf62">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectIsTimestamped()
+: <a class="el" href="sphdirectpcqueue_8h.html#aa5f93f1d934f8751a9647c52ee917b7e">sphdirectpcqueue.h</a>
+</li>
+<li>SPHLFEntryDirectSubcat()
+: <a class="el" href="sphdirectpcqueue_8h.html#a429adbbe6673ae51a2dcfd513d1f2a17">sphdirectpcqueue.h</a>
 </li>
 <li>SPHLFEntryGetFreePtr()
 : <a class="el" href="sphlfentry_8h.html#a9fc0c1889e144b8685a0d29fb2e0ce2b">sphlfentry.h</a>
@@ -1192,8 +1225,8 @@ Here is a list of all documented file members with links to the documentation:
 : <a class="el" href="sphlogportal_8h.html#a1d49c9db12c09c12cec6ad27160c35a9">sphlogportal.h</a>
 </li>
 <li>sphpid16_t
-: <a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphlflogger.h</a>
-, <a class="el" href="sphlfentry_8h.html#a85dc2178807f9e94405281afc0acdff6">sphlfentry.h</a>
+: <a class="el" href="sphlfentry_8h.html#a85dc2178807f9e94405281afc0acdff6">sphlfentry.h</a>
+, <a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphlflogger.h</a>
 </li>
 <li>SPHRemoveProjectContext()
 : <a class="el" href="sphcontext_8h.html#aabc0728b6bbc960e03d0af951d781e81">sphcontext.h</a>
@@ -1208,7 +1241,16 @@ Here is a list of all documented file members with links to the documentation:
 : <a class="el" href="sphsinglepcqueue_8h.html#af9363971fb3b8f26e861ea3259556381">sphsinglepcqueue.h</a>
 </li>
 <li>SPHSinglePCQueueAllocRaw()
-: <a class="el" href="sphsinglepcqueue_8h.html#a4a71cbf5aa12760a3345b65c575b6767">sphsinglepcqueue.h</a>
+: <a class="el" href="sphsinglepcqueue_8h.html#a9f898e177d984050531e04a17d956e11">sphsinglepcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueAllocStrideDirect()
+: <a class="el" href="sphdirectpcqueue_8h.html#ae97de2ad82066b7b61f1fcddaa56c6c0">sphdirectpcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueAllocStrideDirectSpin()
+: <a class="el" href="sphdirectpcqueue_8h.html#a4f5f678509240b9936705b5076ec3832">sphdirectpcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueAllocStrideDirectSpinPause()
+: <a class="el" href="sphdirectpcqueue_8h.html#ad9ab882b3d0f06c9f4c603301e291bd2">sphdirectpcqueue.h</a>
 </li>
 <li>SPHSinglePCQueueAllocStrideEntry()
 : <a class="el" href="sphsinglepcqueue_8h.html#af55c66d0458e5d9fbdc2ead764e83066">sphsinglepcqueue.h</a>
@@ -1234,8 +1276,14 @@ Here is a list of all documented file members with links to the documentation:
 <li>SPHSinglePCQueueEntryIsComplete()
 : <a class="el" href="sphsinglepcqueue_8h.html#ab04df5cfeb1e1e90f19c204d62b05448">sphsinglepcqueue.h</a>
 </li>
+<li>SPHSinglePCQueueEntryIsCompleteDirect()
+: <a class="el" href="sphdirectpcqueue_8h.html#a334a4eb641f9bf8f9761057ebd5c53af">sphdirectpcqueue.h</a>
+</li>
 <li>SPHSinglePCQueueFreeNextEntry()
 : <a class="el" href="sphsinglepcqueue_8h.html#a65d897ebd4616565e77826c92d437c28">sphsinglepcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueFreeNextEntryDirect()
+: <a class="el" href="sphdirectpcqueue_8h.html#aecf42336a34826d5599d9d36bc4623b5">sphdirectpcqueue.h</a>
 </li>
 <li>SPHSinglePCQueueFreeSpace()
 : <a class="el" href="sphsinglepcqueue_8h.html#a9f0e526616505bea3f157a17084c16cb">sphsinglepcqueue.h</a>
@@ -1243,8 +1291,26 @@ Here is a list of all documented file members with links to the documentation:
 <li>SPHSinglePCQueueFull()
 : <a class="el" href="sphsinglepcqueue_8h.html#ab91dd528f2120d4c85b030ac023acabf">sphsinglepcqueue.h</a>
 </li>
+<li>SPHSinglePCQueueGetEntryTemplate()
+: <a class="el" href="sphdirectpcqueue_8h.html#a30c586b711cfa209da68d97c727a3f90">sphdirectpcqueue.h</a>
+</li>
 <li>SPHSinglePCQueueGetNextComplete()
 : <a class="el" href="sphsinglepcqueue_8h.html#afb9f8471b965fb6cec520cd2e8a2bb7b">sphsinglepcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueGetNextCompleteDirect()
+: <a class="el" href="sphdirectpcqueue_8h.html#a3a1241c61422534e4f6ab37c454a6e3a">sphdirectpcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueGetNextCompleteDirectSpin()
+: <a class="el" href="sphdirectpcqueue_8h.html#a42f22f8c49b31eeb7ddadd2d88889e24">sphdirectpcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueGetNextCompleteDirectSpinPause()
+: <a class="el" href="sphdirectpcqueue_8h.html#a273b8483e82ccb040661fed44f860189">sphdirectpcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueGetNextEntryDirect()
+: <a class="el" href="sphdirectpcqueue_8h.html#a5702403a993f0e6923007b63b2377526">sphdirectpcqueue.h</a>
+</li>
+<li>SPHSinglePCQueueGetStride()
+: <a class="el" href="sphsinglepcqueue_8h.html#ad276a63d13148199d5977937a59473dc">sphsinglepcqueue.h</a>
 </li>
 <li>SPHSinglePCQueueInit()
 : <a class="el" href="sphsinglepcqueue_8h.html#a71317464ee6566d90229f743fa592bc2">sphsinglepcqueue.h</a>
@@ -1301,7 +1367,7 @@ Here is a list of all documented file members with links to the documentation:
 </iframe>
 </div>
 
-<hr size="1"/><address style="text-align: right;"><small>Generated on 3 Jun 2014 for Shared Persistent Heap Data Environment Manual by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on 7 Jan 2015 for Shared Persistent Heap Data Environment Manual by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
