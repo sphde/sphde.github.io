@@ -306,7 +306,7 @@ marks the entry complete.
 <div class="line">    SPHLFLogEntryAddString(handlex, <span class="stringliteral">&quot;any_c_string&quot;</span>);</div>
 <div class="line">           ...</div>
 <div class="line">       <span class="comment">// Insure the entry is coherent and mark this entry complete</span></div>
-<div class="line">       <a class="code" href="sphlflogentry_8h.html#a2c48e0285bce4b8bb43e91f1a75e0582">SPHLFLogEntryComplete</a> (handlex);</div>
+<div class="line">       <a class="code" href="sphlflogentry_8h.html#ab02b38ca9d77f83da11c28bb9c094f87">SPHLFLogEntryComplete</a> (handlex);</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The logger contents are shared and persistent and will not be lost if the logging process crashes. Logger entries can be retrieved at any time after it is marked complete. </p><pre class="fragment">The API provides Log Iterator functions that support sequential read-back
 of (completed) Logger entries. First create a log iterator
@@ -332,11 +332,11 @@ entries are read-out (oldest to newest) in order.
 <div class="line">        <span class="keywordtype">char</span> * entry_str;</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// extract entry data</span></div>
-<div class="line">        PID = <a class="code" href="sphlflogentry_8h.html#a8664b111329ebc341e57e4c79ae2e5ab">SPHLFLogEntryPID</a> (handlex);</div>
-<div class="line">        TID = <a class="code" href="sphlflogentry_8h.html#ab175a33b9473897159133b2deb67ea47">SPHLFLogEntryTID</a> (handlex);</div>
-<div class="line">        cat = <a class="code" href="sphlflogentry_8h.html#a5cce137b9fc8602499ed399ec08f5ccf">SPHLFLogEntryCategory</a> (handlex);</div>
-<div class="line">        subcat = <a class="code" href="sphlflogentry_8h.html#aa31c35c29c2aa7ff9744190687f8b3d5">SPHLFLogEntrySubcat</a> (handlex);</div>
-<div class="line">        entry_timestamp = <a class="code" href="sphlflogentry_8h.html#a18b9105fb237a06271031c7aaa6fc96b">SPHLFLogEntryTimeStamp</a> (handlex);</div>
+<div class="line">        PID = <a class="code" href="sphlflogentry_8h.html#af3c21c76b0b2acf23be72967d7f585d3">SPHLFLogEntryPID</a> (handlex);</div>
+<div class="line">        TID = <a class="code" href="sphlflogentry_8h.html#abc1c5f4478f0c957577658ef90e6e315">SPHLFLogEntryTID</a> (handlex);</div>
+<div class="line">        cat = <a class="code" href="sphlflogentry_8h.html#adc871e0a3c447918582f9facd2390b09">SPHLFLogEntryCategory</a> (handlex);</div>
+<div class="line">        subcat = <a class="code" href="sphlflogentry_8h.html#ac8099ead0eff9b3f124e1ab30e8c840c">SPHLFLogEntrySubcat</a> (handlex);</div>
+<div class="line">        entry_timestamp = <a class="code" href="sphlflogentry_8h.html#a91a75a87871d4bdb483a92d8a8ffdd8a">SPHLFLogEntryTimeStamp</a> (handlex);</div>
 <div class="line">        ...</div>
 <div class="line">        <span class="comment">// extract application specific data, in insertion order</span></div>
 <div class="line">        int_data1 = SPHLFLogEntryGetNextInt(handlex);</div>
@@ -553,7 +553,7 @@ entries are read-out (oldest to newest) in order.
 <p>Allocate and initialize the header, of a timestamped logger entry, from the specified logger, without locking or memory barriers. </p>
 <p>The allocation size fixed as specified by the SPHLFCircularLoggerCreate. The Category, Subcategory, PID, TID and high persision timestamp are stored in the header of the new entry. Returns an entry handle which allows the application to insert application specific data into the entry via the <a class="el" href="sphlflogentry_8h.html" title="Shared Persistent Heap, logger entry status, update and access functions. ">sphlflogentry.h</a> API. If the specified logger is full the allocation may fail.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The NoLock form is only appropriate for single thread applications where the logger is not shared with other processes. Or if used in a multi-threaded application each thread should have it's own private logger instance.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Also recommended that the NoLock allocates should be completed with <a class="el" href="sphlflogentry_8h.html#a56b54482f6d8acaff0d4ef3fb9b1afe8" title="Marks the entry specified by the entry handle as complete. No memory barriers are performance...">SPHLFLogEntryWeakComplete()</a> from <a class="el" href="sphlflogentry_8h.html" title="Shared Persistent Heap, logger entry status, update and access functions. ">sphlflogentry.h</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Also recommended that the NoLock allocates should be completed with <a class="el" href="sphlflogentry_8h.html#a71d19cda09ecda87c2677bd16d250f71" title="Marks the entry specified by the entry handle as complete. No memory barriers are performance...">SPHLFLogEntryWeakComplete()</a> from <a class="el" href="sphlflogentry_8h.html" title="Shared Persistent Heap, logger entry status, update and access functions. ">sphlflogentry.h</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">log</td><td>Handle to a Logger. </td></tr>
@@ -670,7 +670,7 @@ entries are read-out (oldest to newest) in order.
 <p>Allocate and initialize the header of a timestamped logger entry from the specified logger, without locking or memory barriers. </p>
 <p>The allocation size is rounded up to the next quadword boundary and does not include the implicit size of the Timestamp entry header. The Category, Subcategory, PID, TID and high persision timestamp are stored in the header of the new entry. Returns an entry handle which allows the application to insert application specific data into the entry via the <a class="el" href="sphlflogentry_8h.html" title="Shared Persistent Heap, logger entry status, update and access functions. ">sphlflogentry.h</a> API. If the specified logger is full the allocation may fail.</p>
 <dl class="section warning"><dt>Warning</dt><dd>The NoLock form is only appropriate for single thread applications where the logger is not shared with other processes. Or if used in a multi-threaded application each thread should have it's own private logger instance.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Also recommended that the NoLock allocates should be completed with <a class="el" href="sphlflogentry_8h.html#a56b54482f6d8acaff0d4ef3fb9b1afe8" title="Marks the entry specified by the entry handle as complete. No memory barriers are performance...">SPHLFLogEntryWeakComplete()</a> from <a class="el" href="sphlflogentry_8h.html" title="Shared Persistent Heap, logger entry status, update and access functions. ">sphlflogentry.h</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Also recommended that the NoLock allocates should be completed with <a class="el" href="sphlflogentry_8h.html#a71d19cda09ecda87c2677bd16d250f71" title="Marks the entry specified by the entry handle as complete. No memory barriers are performance...">SPHLFLogEntryWeakComplete()</a> from <a class="el" href="sphlflogentry_8h.html" title="Shared Persistent Heap, logger entry status, update and access functions. ">sphlflogentry.h</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">log</td><td>Handle to a Logger. </td></tr>
@@ -1038,7 +1038,7 @@ entries are read-out (oldest to newest) in order.
 <p>For the provided Logger Iterator creates a entry handle for the next sequential Logger entry. The resulting entry handle can be used to read the contents of the Logger entry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iterator</td><td>Handle asociated with a Logger. </td></tr>
+    <tr><td class="paramname">iterator</td><td>Handle associated with a Logger. </td></tr>
     <tr><td class="paramname">handlespace</td><td>Address of local area that will be initialied as a <a class="el" href="structSPHLFLoggerHandle__t.html" title="Instance of a Lock Free Logger Entry Handle. ">SPHLFLoggerHandle_t</a> for the allocated entry. </td></tr>
   </table>
   </dd>
@@ -1185,7 +1185,7 @@ entries are read-out (oldest to newest) in order.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

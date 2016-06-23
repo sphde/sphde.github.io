@@ -219,17 +219,17 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">if</span> (handle)</div>
 <div class="line">        {       <span class="comment">// insert data into the allocated queue entry</span></div>
 <div class="line">                data_struct11 *struct_ptr;</div>
-<div class="line">                <span class="keywordflow">if</span> (<a class="code" href="sphlfentry_8h.html#a1afe6913e6b64d4e4a006695b759430b">SPHLFEntryAddPtr</a> (handle, (<span class="keywordtype">void</span>*) sas_data_buff)</div>
+<div class="line">                <span class="keywordflow">if</span> (<a class="code" href="sphlfentry_8h.html#ae56d8ea3f911b29b878ab18dad4b8394">SPHLFEntryAddPtr</a> (handle, (<span class="keywordtype">void</span>*) sas_data_buff)</div>
 <div class="line">                {</div>
 <div class="line">                        printf(<span class="stringliteral">&quot;error  SPHLFEntryAddPtr(%p, sas_data_buff) failed)\n&quot;</span>,</div>
 <div class="line">                                   handle);</div>
 <div class="line">                }</div>
-<div class="line">                <span class="keywordflow">if</span> (<a class="code" href="sphlfentry_8h.html#a25bbffc19aa5877863d48298db6bc679">SPHLFEntryAddInt</a> (handle, data_int1))</div>
+<div class="line">                <span class="keywordflow">if</span> (<a class="code" href="sphlfentry_8h.html#aa2a87a1a328074acf50e9ff2bf68f691">SPHLFEntryAddInt</a> (handle, data_int1))</div>
 <div class="line">                {</div>
 <div class="line">                        printf(<span class="stringliteral">&quot;error  SPHLFEntryAddInt(%p, data_int1) failed)\n&quot;</span>,</div>
 <div class="line">                                   handle);</div>
 <div class="line">                }</div>
-<div class="line">                <span class="keywordflow">if</span> (<a class="code" href="sphlfentry_8h.html#a2ee8d6d639c26ce82aaf09edfbd7cef9">SPHLFEntryAddString</a> (handle, (<span class="keywordtype">char</span>*)data_string1))</div>
+<div class="line">                <span class="keywordflow">if</span> (<a class="code" href="sphlfentry_8h.html#a73d6d71e1b5ef577abe13ac630fdb186">SPHLFEntryAddString</a> (handle, (<span class="keywordtype">char</span>*)data_string1))</div>
 <div class="line">                {</div>
 <div class="line">                        printf(<span class="stringliteral">&quot;error  SPHLFEntryAddString(%p, data_string1) failed)\n&quot;</span>,</div>
 <div class="line">                                   handle);</div>
@@ -274,14 +274,14 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">if</span> (handle)</div>
 <div class="line">        {       <span class="comment">// insert data into the allocated queue entry</span></div>
 <div class="line">                data_struct11 *struct_ptr;</div>
-<div class="line">                sas_data_buff = <a class="code" href="sphlfentry_8h.html#abf68d084654b4cf85c56d60270064703">SPHLFEntryGetNextPtr</a> (handle);</div>
+<div class="line">                sas_data_buff = <a class="code" href="sphlfentry_8h.html#add441d7f48e2f00a54b752671fdf69d3">SPHLFEntryGetNextPtr</a> (handle);</div>
 <div class="line">                <span class="keywordflow">if</span> (!sas_data_buff)</div>
 <div class="line">                {</div>
 <div class="line">                        printf(<span class="stringliteral">&quot;error  SPHLFEntryAddPtr(%p, sas_data_buff) failed)\n&quot;</span>,</div>
 <div class="line">                                   handle);</div>
 <div class="line">                }</div>
-<div class="line">                data_int1 = <a class="code" href="sphlfentry_8h.html#ad2605b057742dd9fc907768e195e9b2b">SPHLFEntryGetNextInt</a> (handle);</div>
-<div class="line">                data_string1 = <a class="code" href="sphlfentry_8h.html#a724c3c121f50d0b528161dad1e6db284">SPHLFEntryGetNextString</a> (handle);</div>
+<div class="line">                data_int1 = <a class="code" href="sphlfentry_8h.html#a07cbb1ba2cb5b655b7528e178c7acbaa">SPHLFEntryGetNextInt</a> (handle);</div>
+<div class="line">                data_string1 = <a class="code" href="sphlfentry_8h.html#a3206a649e7562df0e25830eae258080f">SPHLFEntryGetNextString</a> (handle);</div>
 <div class="line">                <span class="keywordflow">if</span> (data_string1)</div>
 <div class="line">                {</div>
 <div class="line">                        printf(<span class="stringliteral">&quot;error  SPHLFEntryGetNextString(%p, data_string1) failed)\n&quot;</span>,</div>
@@ -965,7 +965,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

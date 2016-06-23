@@ -120,30 +120,30 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0870fbd111ff161e696d4582b2b04759"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a0870fbd111ff161e696d4582b2b04759">SPHLFEntryDirectComplete</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle, <a class="el" href="sphlfentry_8h.html#a68e60b0ae114451f6f34dde2f0a2a94e">sphLFEntryID_t</a> entry_template, int catcode, int subcode)</td></tr>
-<tr class="memdesc:a0870fbd111ff161e696d4582b2b04759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete.  <a href="#a0870fbd111ff161e696d4582b2b04759">More...</a><br /></td></tr>
-<tr class="separator:a0870fbd111ff161e696d4582b2b04759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873945ea6ab74626e7ea1cc293bd0d03"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a873945ea6ab74626e7ea1cc293bd0d03">SPHLFEntryDirectGetFreePtr</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
-<tr class="memdesc:a873945ea6ab74626e7ea1cc293bd0d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first free byte address for the direct entry specified by the direct entry handle. This is normally the byte after the <a class="el" href="unionsphLFEntry__t.html" title="Union of Entry details with 32-bit word for atomic update. ">sphLFEntry_t</a>.  <a href="#a873945ea6ab74626e7ea1cc293bd0d03">More...</a><br /></td></tr>
-<tr class="separator:a873945ea6ab74626e7ea1cc293bd0d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c05f176d4d3ced51f47ccd7c318c088"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a9c05f176d4d3ced51f47ccd7c318c088">SPHLFEntryDirectGetPtrAligned</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle, size_t alignval)</td></tr>
-<tr class="memdesc:a9c05f176d4d3ced51f47ccd7c318c088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first free byte address, with required alignment, within the direct entry specified by the direct entry handle. This is normally the address after the <a class="el" href="unionsphLFEntry__t.html" title="Union of Entry details with 32-bit word for atomic update. ">sphLFEntry_t</a> plus alignment padding.  <a href="#a9c05f176d4d3ced51f47ccd7c318c088">More...</a><br /></td></tr>
-<tr class="separator:a9c05f176d4d3ced51f47ccd7c318c088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5cdfd616e0f427f57f7103c3c15b243"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#aa5cdfd616e0f427f57f7103c3c15b243">SPHLFEntryDirectIncAndAlign</a> (void *directptr, size_t incval, size_t alignval)</td></tr>
-<tr class="memdesc:aa5cdfd616e0f427f57f7103c3c15b243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next free byte address within direct entry specified by a current address within that direct entry.  <a href="#aa5cdfd616e0f427f57f7103c3c15b243">More...</a><br /></td></tr>
-<tr class="separator:aa5cdfd616e0f427f57f7103c3c15b243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23788fc67715bb71768a4fefbeecdf62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a23788fc67715bb71768a4fefbeecdf62">SPHLFEntryDirectIsComplete</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
-<tr class="memdesc:a23788fc67715bb71768a4fefbeecdf62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the direct entry handle.  <a href="#a23788fc67715bb71768a4fefbeecdf62">More...</a><br /></td></tr>
-<tr class="separator:a23788fc67715bb71768a4fefbeecdf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f93f1d934f8751a9647c52ee917b7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#aa5f93f1d934f8751a9647c52ee917b7e">SPHLFEntryDirectIsTimestamped</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
-<tr class="memdesc:aa5f93f1d934f8751a9647c52ee917b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the direct entry handle.  <a href="#aa5f93f1d934f8751a9647c52ee917b7e">More...</a><br /></td></tr>
-<tr class="separator:aa5f93f1d934f8751a9647c52ee917b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13025380ee0723957e9709a59bc9bdfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a13025380ee0723957e9709a59bc9bdfe">SPHLFEntryDirectCategory</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
-<tr class="memdesc:a13025380ee0723957e9709a59bc9bdfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry category for the entry specified by the direct entry handle.  <a href="#a13025380ee0723957e9709a59bc9bdfe">More...</a><br /></td></tr>
-<tr class="separator:a13025380ee0723957e9709a59bc9bdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a429adbbe6673ae51a2dcfd513d1f2a17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a429adbbe6673ae51a2dcfd513d1f2a17">SPHLFEntryDirectSubcat</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
-<tr class="memdesc:a429adbbe6673ae51a2dcfd513d1f2a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry sub-category for the entry specified by the direct entry handle.  <a href="#a429adbbe6673ae51a2dcfd513d1f2a17">More...</a><br /></td></tr>
-<tr class="separator:a429adbbe6673ae51a2dcfd513d1f2a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402662292f8ba9f24a0f2fa7828906f7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a402662292f8ba9f24a0f2fa7828906f7">SPHLFEntryDirectComplete</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle, <a class="el" href="sphlfentry_8h.html#a68e60b0ae114451f6f34dde2f0a2a94e">sphLFEntryID_t</a> entry_template, int catcode, int subcode)</td></tr>
+<tr class="memdesc:a402662292f8ba9f24a0f2fa7828906f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes any memory barriers required by the platform to ensure that all previous stores by this thread to this entry are complete.  <a href="#a402662292f8ba9f24a0f2fa7828906f7">More...</a><br /></td></tr>
+<tr class="separator:a402662292f8ba9f24a0f2fa7828906f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b2d3b82343ff17bf46401f064b73e0"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#ad6b2d3b82343ff17bf46401f064b73e0">SPHLFEntryDirectGetFreePtr</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
+<tr class="memdesc:ad6b2d3b82343ff17bf46401f064b73e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first free byte address for the direct entry specified by the direct entry handle. This is normally the byte after the <a class="el" href="unionsphLFEntry__t.html" title="Union of Entry details with 32-bit word for atomic update. ">sphLFEntry_t</a>.  <a href="#ad6b2d3b82343ff17bf46401f064b73e0">More...</a><br /></td></tr>
+<tr class="separator:ad6b2d3b82343ff17bf46401f064b73e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912f28ed3b06ee1df3300f657811e27c"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a912f28ed3b06ee1df3300f657811e27c">SPHLFEntryDirectGetPtrAligned</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle, size_t alignval)</td></tr>
+<tr class="memdesc:a912f28ed3b06ee1df3300f657811e27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first free byte address, with required alignment, within the direct entry specified by the direct entry handle. This is normally the address after the <a class="el" href="unionsphLFEntry__t.html" title="Union of Entry details with 32-bit word for atomic update. ">sphLFEntry_t</a> plus alignment padding.  <a href="#a912f28ed3b06ee1df3300f657811e27c">More...</a><br /></td></tr>
+<tr class="separator:a912f28ed3b06ee1df3300f657811e27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2b6a68ebdd0fd1e48a0de4fcb5f0cf"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#aef2b6a68ebdd0fd1e48a0de4fcb5f0cf">SPHLFEntryDirectIncAndAlign</a> (void *directptr, size_t incval, size_t alignval)</td></tr>
+<tr class="memdesc:aef2b6a68ebdd0fd1e48a0de4fcb5f0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next free byte address within direct entry specified by a current address within that direct entry.  <a href="#aef2b6a68ebdd0fd1e48a0de4fcb5f0cf">More...</a><br /></td></tr>
+<tr class="separator:aef2b6a68ebdd0fd1e48a0de4fcb5f0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc671cef17fa340d0b2d99909a13d2b5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#abc671cef17fa340d0b2d99909a13d2b5">SPHLFEntryDirectIsComplete</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
+<tr class="memdesc:abc671cef17fa340d0b2d99909a13d2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the direct entry handle.  <a href="#abc671cef17fa340d0b2d99909a13d2b5">More...</a><br /></td></tr>
+<tr class="separator:abc671cef17fa340d0b2d99909a13d2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb82e42518f79ba8a6d256e5bb66826"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#aacb82e42518f79ba8a6d256e5bb66826">SPHLFEntryDirectIsTimestamped</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
+<tr class="memdesc:aacb82e42518f79ba8a6d256e5bb66826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the direct entry handle.  <a href="#aacb82e42518f79ba8a6d256e5bb66826">More...</a><br /></td></tr>
+<tr class="separator:aacb82e42518f79ba8a6d256e5bb66826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfeafb44bc25be707cb58cf6cb86be9d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#acfeafb44bc25be707cb58cf6cb86be9d">SPHLFEntryDirectCategory</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
+<tr class="memdesc:acfeafb44bc25be707cb58cf6cb86be9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry category for the entry specified by the direct entry handle.  <a href="#acfeafb44bc25be707cb58cf6cb86be9d">More...</a><br /></td></tr>
+<tr class="separator:acfeafb44bc25be707cb58cf6cb86be9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970124925f11d4f989a0a9fa3d720f2c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a970124925f11d4f989a0a9fa3d720f2c">SPHLFEntryDirectSubcat</a> (<a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a> directHandle)</td></tr>
+<tr class="memdesc:a970124925f11d4f989a0a9fa3d720f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry sub-category for the entry specified by the direct entry handle.  <a href="#a970124925f11d4f989a0a9fa3d720f2c">More...</a><br /></td></tr>
+<tr class="separator:a970124925f11d4f989a0a9fa3d720f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30c586b711cfa209da68d97c727a3f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sphtimer_8h.html#a4d08a6f74d96b695afefd03854839b83">__C__</a> <a class="el" href="sphlfentry_8h.html#a68e60b0ae114451f6f34dde2f0a2a94e">sphLFEntryID_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphdirectpcqueue_8h.html#a30c586b711cfa209da68d97c727a3f90">SPHSinglePCQueueGetEntryTemplate</a> (<a class="el" href="sphsinglepcqueue_8h.html#af9363971fb3b8f26e861ea3259556381">SPHSinglePCQueue_t</a> queue)</td></tr>
 <tr class="memdesc:a30c586b711cfa209da68d97c727a3f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry template for an existing Lock Free Single Producer Single Consumer Queue. This template is used later to mark an allocated entry complete.  <a href="#a30c586b711cfa209da68d97c727a3f90">More...</a><br /></td></tr>
 <tr class="separator:a30c586b711cfa209da68d97c727a3f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,11 +198,11 @@ Functions</h2></td></tr>
 <div class="line">  handle = <a class="code" href="sphdirectpcqueue_8h.html#a4f5f678509240b9936705b5076ec3832">SPHSinglePCQueueAllocStrideDirectSpin</a> (pqueue);</div>
 <div class="line">  <span class="keywordflow">if</span> (handle)</div>
 <div class="line">    {</div>
-<div class="line">      array = (<span class="keywordtype">int</span> *) <a class="code" href="sphdirectpcqueue_8h.html#a873945ea6ab74626e7ea1cc293bd0d03">SPHLFEntryDirectGetFreePtr</a> (handle);</div>
+<div class="line">      array = (<span class="keywordtype">int</span> *) <a class="code" href="sphdirectpcqueue_8h.html#ad6b2d3b82343ff17bf46401f064b73e0">SPHLFEntryDirectGetFreePtr</a> (handle);</div>
 <div class="line">      array[0] = val1;</div>
 <div class="line">      array[1] = val2;</div>
 <div class="line">      array[2] = val3;</div>
-<div class="line">      <a class="code" href="sphdirectpcqueue_8h.html#a0870fbd111ff161e696d4582b2b04759">SPHLFEntryDirectComplete</a> (handle, entry_tmp, 1, 2);</div>
+<div class="line">      <a class="code" href="sphdirectpcqueue_8h.html#a402662292f8ba9f24a0f2fa7828906f7">SPHLFEntryDirectComplete</a> (handle, entry_tmp, 1, 2);</div>
 <div class="line">    }</div>
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
@@ -222,7 +222,7 @@ Functions</h2></td></tr>
 <div class="line">  handle = <a class="code" href="sphdirectpcqueue_8h.html#a42f22f8c49b31eeb7ddadd2d88889e24">SPHSinglePCQueueGetNextCompleteDirectSpin</a> (cqueue);</div>
 <div class="line">  <span class="keywordflow">if</span> (handle)</div>
 <div class="line">    {</div>
-<div class="line">      array = (<span class="keywordtype">int</span> *) <a class="code" href="sphdirectpcqueue_8h.html#a873945ea6ab74626e7ea1cc293bd0d03">SPHLFEntryDirectGetFreePtr</a> (handle);</div>
+<div class="line">      array = (<span class="keywordtype">int</span> *) <a class="code" href="sphdirectpcqueue_8h.html#ad6b2d3b82343ff17bf46401f064b73e0">SPHLFEntryDirectGetFreePtr</a> (handle);</div>
 <div class="line">      data1 = array[0];</div>
 <div class="line">      data2 = array[1];</div>
 <div class="line">      data3 = array[2];</div>
@@ -264,7 +264,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a13025380ee0723957e9709a59bc9bdfe"></a>
+<a class="anchor" id="acfeafb44bc25be707cb58cf6cb86be9d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -272,7 +272,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFEntryDirectCategory </td>
+          <td class="memname">static int SPHLFEntryDirectCategory </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em></td><td>)</td>
@@ -281,7 +281,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -297,7 +297,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="a0870fbd111ff161e696d4582b2b04759"></a>
+<a class="anchor" id="a402662292f8ba9f24a0f2fa7828906f7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -305,7 +305,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFEntryDirectComplete </td>
+          <td class="memname">static int SPHLFEntryDirectComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em>, </td>
@@ -336,12 +336,12 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete. </p>
+<p>Marks the entry specified by the entry handle as complete. Also executes any memory barriers required by the platform to ensure that all previous stores by this thread to this entry are complete. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">directHandle</td><td>Entry Handle for an allocated entry. </td></tr>
@@ -355,7 +355,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="a873945ea6ab74626e7ea1cc293bd0d03"></a>
+<a class="anchor" id="ad6b2d3b82343ff17bf46401f064b73e0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -363,7 +363,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFEntryDirectGetFreePtr </td>
+          <td class="memname">static void* SPHLFEntryDirectGetFreePtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em></td><td>)</td>
@@ -372,7 +372,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -389,7 +389,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="a9c05f176d4d3ced51f47ccd7c318c088"></a>
+<a class="anchor" id="a912f28ed3b06ee1df3300f657811e27c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -397,7 +397,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFEntryDirectGetPtrAligned </td>
+          <td class="memname">static void* SPHLFEntryDirectGetPtrAligned </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em>, </td>
@@ -416,7 +416,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -434,7 +434,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="aa5cdfd616e0f427f57f7103c3c15b243"></a>
+<a class="anchor" id="aef2b6a68ebdd0fd1e48a0de4fcb5f0cf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -442,7 +442,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFEntryDirectIncAndAlign </td>
+          <td class="memname">static void* SPHLFEntryDirectIncAndAlign </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>directptr</em>, </td>
@@ -467,7 +467,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -486,7 +486,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="a23788fc67715bb71768a4fefbeecdf62"></a>
+<a class="anchor" id="abc671cef17fa340d0b2d99909a13d2b5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -494,7 +494,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFEntryDirectIsComplete </td>
+          <td class="memname">static int SPHLFEntryDirectIsComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em></td><td>)</td>
@@ -503,7 +503,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -519,7 +519,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="aa5f93f1d934f8751a9647c52ee917b7e"></a>
+<a class="anchor" id="aacb82e42518f79ba8a6d256e5bb66826"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -527,7 +527,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFEntryDirectIsTimestamped </td>
+          <td class="memname">static int SPHLFEntryDirectIsTimestamped </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em></td><td>)</td>
@@ -536,7 +536,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -552,7 +552,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 
 </div>
 </div>
-<a class="anchor" id="a429adbbe6673ae51a2dcfd513d1f2a17"></a>
+<a class="anchor" id="a970124925f11d4f989a0a9fa3d720f2c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -560,7 +560,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFEntryDirectSubcat </td>
+          <td class="memname">static int SPHLFEntryDirectSubcat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="sphdirectpcqueue_8h.html#a206f641019c26a3569dcfd8bbdc56377">SPHLFEntryDirect_t</a>&#160;</td>
           <td class="paramname"><em>directHandle</em></td><td>)</td>
@@ -569,7 +569,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -861,7 +861,7 @@ to allow concurrent access to independent entries from multiple threads.</pre>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -105,112 +105,112 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6fcb37ba3e1708d561968e340b26786f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fcb37ba3e1708d561968e340b26786f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a6fcb37ba3e1708d561968e340b26786f">SPHLOGENTRYGETSTRUCTPTR</a>(__handle,  __struct)&#160;&#160;&#160;<a class="el" href="sphlflogentry_8h.html#ab1d5f149afbb63a90d2bf2a461936a06">SPHLFlogEntryGetStructPtr</a>(__handle, sizeof(__struct), __alignof__(__struct))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a6fcb37ba3e1708d561968e340b26786f">SPHLOGENTRYGETSTRUCTPTR</a>(__handle,  __struct)&#160;&#160;&#160;<a class="el" href="sphlflogentry_8h.html#a36603864a36feb93a87b668962c6b226">SPHLFlogEntryGetStructPtr</a>(__handle, sizeof(__struct), __alignof__(__struct))</td></tr>
 <tr class="memdesc:a6fcb37ba3e1708d561968e340b26786f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for using sizeof/__alignof__ parms with SPHLFlogEntryGetStructPtr function. <br /></td></tr>
 <tr class="separator:a6fcb37ba3e1708d561968e340b26786f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5df91ee1672c556a09bdbbd62e99d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada5df91ee1672c556a09bdbbd62e99d6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ada5df91ee1672c556a09bdbbd62e99d6">SPHLOGENTRYALLOCSTRUCT</a>(__handle,  __struct)&#160;&#160;&#160;<a class="el" href="sphlflogentry_8h.html#a7652c49a66c32701f1cc6c00d34e7552">SPHLFlogEntryAllocStruct</a>(__handle, sizeof(__struct), __alignof__(__struct))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ada5df91ee1672c556a09bdbbd62e99d6">SPHLOGENTRYALLOCSTRUCT</a>(__handle,  __struct)&#160;&#160;&#160;<a class="el" href="sphlflogentry_8h.html#a840a489d9e27cf643e921409680dbb3e">SPHLFlogEntryAllocStruct</a>(__handle, sizeof(__struct), __alignof__(__struct))</td></tr>
 <tr class="memdesc:ada5df91ee1672c556a09bdbbd62e99d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for using sizeof/__alignof__ parms with SPHLFlogEntryAllocStruct function. <br /></td></tr>
 <tr class="separator:ada5df91ee1672c556a09bdbbd62e99d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a242ad8d63fd2bb13b23a5e2665545d25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a242ad8d63fd2bb13b23a5e2665545d25">SPHLFLogEntryStrongComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a242ad8d63fd2bb13b23a5e2665545d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes any memory barriers required by the platform to ensure that all previous stores to this entry by this thread are visible to other threads.  <a href="#a242ad8d63fd2bb13b23a5e2665545d25">More...</a><br /></td></tr>
-<tr class="separator:a242ad8d63fd2bb13b23a5e2665545d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b54482f6d8acaff0d4ef3fb9b1afe8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a56b54482f6d8acaff0d4ef3fb9b1afe8">SPHLFLogEntryWeakComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a56b54482f6d8acaff0d4ef3fb9b1afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. No memory barriers are performance. On out-of-order machines there are no guarantee that all previous stores by this thread are visible to other threads.  <a href="#a56b54482f6d8acaff0d4ef3fb9b1afe8">More...</a><br /></td></tr>
-<tr class="separator:a56b54482f6d8acaff0d4ef3fb9b1afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c48e0285bce4b8bb43e91f1a75e0582"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a2c48e0285bce4b8bb43e91f1a75e0582">SPHLFLogEntryComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a2c48e0285bce4b8bb43e91f1a75e0582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete. On out-of-order machines this barrier does not guarantee that all previous stores by this thread are visible to other threads.  <a href="#a2c48e0285bce4b8bb43e91f1a75e0582">More...</a><br /></td></tr>
-<tr class="separator:a2c48e0285bce4b8bb43e91f1a75e0582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24b5c418e935b72ee0c7fe5c803e0cf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a24b5c418e935b72ee0c7fe5c803e0cf0">SPHLFLogEntryIsComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a24b5c418e935b72ee0c7fe5c803e0cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the entry handle.  <a href="#a24b5c418e935b72ee0c7fe5c803e0cf0">More...</a><br /></td></tr>
-<tr class="separator:a24b5c418e935b72ee0c7fe5c803e0cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d07e65a75a3b139982167edaf910696"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a8d07e65a75a3b139982167edaf910696">SPHLFLogEntryIsTimestamped</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a8d07e65a75a3b139982167edaf910696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the entry handle.  <a href="#a8d07e65a75a3b139982167edaf910696">More...</a><br /></td></tr>
-<tr class="separator:a8d07e65a75a3b139982167edaf910696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b9105fb237a06271031c7aaa6fc96b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sphtimer_8h.html#a2075c191959b463818a251bc7a9372dd">sphtimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a18b9105fb237a06271031c7aaa6fc96b">SPHLFLogEntryTimeStamp</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a18b9105fb237a06271031c7aaa6fc96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time stamp value for the entry specified by the entry handle.  <a href="#a18b9105fb237a06271031c7aaa6fc96b">More...</a><br /></td></tr>
-<tr class="separator:a18b9105fb237a06271031c7aaa6fc96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8664b111329ebc341e57e4c79ae2e5ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a8664b111329ebc341e57e4c79ae2e5ab">SPHLFLogEntryPID</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a8664b111329ebc341e57e4c79ae2e5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the process ID for the entry specified by the entry handle.  <a href="#a8664b111329ebc341e57e4c79ae2e5ab">More...</a><br /></td></tr>
-<tr class="separator:a8664b111329ebc341e57e4c79ae2e5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab175a33b9473897159133b2deb67ea47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ab175a33b9473897159133b2deb67ea47">SPHLFLogEntryTID</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:ab175a33b9473897159133b2deb67ea47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the thread ID for the entry specified by the entry handle.  <a href="#ab175a33b9473897159133b2deb67ea47">More...</a><br /></td></tr>
-<tr class="separator:ab175a33b9473897159133b2deb67ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee6f50aa6c65f7862071066588efeaad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSPHLFLogHeader__t.html">SPHLFLogHeader_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aee6f50aa6c65f7862071066588efeaad">SPHLFLogEntryHeader</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:aee6f50aa6c65f7862071066588efeaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the address for the entry header specified by the entry handle.  <a href="#aee6f50aa6c65f7862071066588efeaad">More...</a><br /></td></tr>
-<tr class="separator:aee6f50aa6c65f7862071066588efeaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cce137b9fc8602499ed399ec08f5ccf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a5cce137b9fc8602499ed399ec08f5ccf">SPHLFLogEntryCategory</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:a5cce137b9fc8602499ed399ec08f5ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry category for the entry specified by the entry handle.  <a href="#a5cce137b9fc8602499ed399ec08f5ccf">More...</a><br /></td></tr>
-<tr class="separator:a5cce137b9fc8602499ed399ec08f5ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa31c35c29c2aa7ff9744190687f8b3d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aa31c35c29c2aa7ff9744190687f8b3d5">SPHLFLogEntrySubcat</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
-<tr class="memdesc:aa31c35c29c2aa7ff9744190687f8b3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry sub-category for the entry specified by the entry handle.  <a href="#aa31c35c29c2aa7ff9744190687f8b3d5">More...</a><br /></td></tr>
-<tr class="separator:aa31c35c29c2aa7ff9744190687f8b3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae13346f87e1ce85543fe11deba58f5f1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ae13346f87e1ce85543fe11deba58f5f1">SPHLFLogEntryGetFreePtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:ae13346f87e1ce85543fe11deba58f5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the address first free byte for the entry specified by the entry handle.  <a href="#ae13346f87e1ce85543fe11deba58f5f1">More...</a><br /></td></tr>
-<tr class="separator:ae13346f87e1ce85543fe11deba58f5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1d5f149afbb63a90d2bf2a461936a06"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ab1d5f149afbb63a90d2bf2a461936a06">SPHLFlogEntryGetStructPtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, unsigned long __size, unsigned long __align)</td></tr>
-<tr class="memdesc:ab1d5f149afbb63a90d2bf2a461936a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the correctly aligned pointer for a struct or array starting at the next free location within the logger entry.  <a href="#ab1d5f149afbb63a90d2bf2a461936a06">More...</a><br /></td></tr>
-<tr class="separator:ab1d5f149afbb63a90d2bf2a461936a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7652c49a66c32701f1cc6c00d34e7552"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a7652c49a66c32701f1cc6c00d34e7552">SPHLFlogEntryAllocStruct</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, unsigned long __size, unsigned long __align)</td></tr>
-<tr class="memdesc:a7652c49a66c32701f1cc6c00d34e7552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for struct starting at the next free location within the logger entry.  <a href="#a7652c49a66c32701f1cc6c00d34e7552">More...</a><br /></td></tr>
-<tr class="separator:a7652c49a66c32701f1cc6c00d34e7552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a645598dc1663b0f894a8ded3ddf48360"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a645598dc1663b0f894a8ded3ddf48360">SPHLFlogEntryAddString</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, char *value)</td></tr>
-<tr class="memdesc:a645598dc1663b0f894a8ded3ddf48360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a C string at the next free location within the logger entry.  <a href="#a645598dc1663b0f894a8ded3ddf48360">More...</a><br /></td></tr>
-<tr class="separator:a645598dc1663b0f894a8ded3ddf48360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d2e43bf4178c6cad7d2cf9a06a0830"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ae0d2e43bf4178c6cad7d2cf9a06a0830">SPHLFlogEntryAddChar</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, char value)</td></tr>
-<tr class="memdesc:ae0d2e43bf4178c6cad7d2cf9a06a0830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a character at the next free location within the logger entry.  <a href="#ae0d2e43bf4178c6cad7d2cf9a06a0830">More...</a><br /></td></tr>
-<tr class="separator:ae0d2e43bf4178c6cad7d2cf9a06a0830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a515792e8e34afb8adef031270554b2ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a515792e8e34afb8adef031270554b2ca">SPHLFlogEntryAddShort</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, short int value)</td></tr>
-<tr class="memdesc:a515792e8e34afb8adef031270554b2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a short int at the next free location within the logger entry.  <a href="#a515792e8e34afb8adef031270554b2ca">More...</a><br /></td></tr>
-<tr class="separator:a515792e8e34afb8adef031270554b2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4efbdf0e3f7382506b41c77b05a6707e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a4efbdf0e3f7382506b41c77b05a6707e">SPHLFlogEntryAddInt</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, int value)</td></tr>
-<tr class="memdesc:a4efbdf0e3f7382506b41c77b05a6707e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a int at the next free location within the logger entry.  <a href="#a4efbdf0e3f7382506b41c77b05a6707e">More...</a><br /></td></tr>
-<tr class="separator:a4efbdf0e3f7382506b41c77b05a6707e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf68eac639cf19de0f976d8d62a64324"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#abf68eac639cf19de0f976d8d62a64324">SPHLFlogEntryAddLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, long value)</td></tr>
-<tr class="memdesc:abf68eac639cf19de0f976d8d62a64324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a long int at the next free location within the logger entry.  <a href="#abf68eac639cf19de0f976d8d62a64324">More...</a><br /></td></tr>
-<tr class="separator:abf68eac639cf19de0f976d8d62a64324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c30e6025b0bbff727baf588bbb2e1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a38c30e6025b0bbff727baf588bbb2e1e">SPHLFlogEntryAddPtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, void *value)</td></tr>
-<tr class="memdesc:a38c30e6025b0bbff727baf588bbb2e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a void* at the next free location within the logger entry.  <a href="#a38c30e6025b0bbff727baf588bbb2e1e">More...</a><br /></td></tr>
-<tr class="separator:a38c30e6025b0bbff727baf588bbb2e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae40701df169200627462edf85da7fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a1ae40701df169200627462edf85da7fd">SPHLFlogEntryAddLongLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, long long value)</td></tr>
-<tr class="memdesc:a1ae40701df169200627462edf85da7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a long long int at the next free location within the logger entry.  <a href="#a1ae40701df169200627462edf85da7fd">More...</a><br /></td></tr>
-<tr class="separator:a1ae40701df169200627462edf85da7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da1364adade000f1b2e7da24048a855"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a0da1364adade000f1b2e7da24048a855">SPHLFlogEntryAddFloat</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, float value)</td></tr>
-<tr class="memdesc:a0da1364adade000f1b2e7da24048a855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a float at the next free location within the logger entry.  <a href="#a0da1364adade000f1b2e7da24048a855">More...</a><br /></td></tr>
-<tr class="separator:a0da1364adade000f1b2e7da24048a855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8810e4f12395a9b6a80f3cc6ab86bba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a8810e4f12395a9b6a80f3cc6ab86bba1">SPHLFlogEntryAddDouble</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, double value)</td></tr>
-<tr class="memdesc:a8810e4f12395a9b6a80f3cc6ab86bba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a double at the next free location within the logger entry.  <a href="#a8810e4f12395a9b6a80f3cc6ab86bba1">More...</a><br /></td></tr>
-<tr class="separator:a8810e4f12395a9b6a80f3cc6ab86bba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4506e4cabd88e840bcd1eb6c21db5fb3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a4506e4cabd88e840bcd1eb6c21db5fb3">SPHLFlogEntryGetNextChar</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:a4506e4cabd88e840bcd1eb6c21db5fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next char from the logger entry via the current next value pointer. The internal next value pointer is advanced to the next location.  <a href="#a4506e4cabd88e840bcd1eb6c21db5fb3">More...</a><br /></td></tr>
-<tr class="separator:a4506e4cabd88e840bcd1eb6c21db5fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88f037eecc7692424c3b4ca7f10ea96f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a88f037eecc7692424c3b4ca7f10ea96f">SPHLFlogEntryGetNextString</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:a88f037eecc7692424c3b4ca7f10ea96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pointer to the next C string from the logger entry via the current next value pointer. The internal next value pointer is advanced to the next location after the string NUL char.  <a href="#a88f037eecc7692424c3b4ca7f10ea96f">More...</a><br /></td></tr>
-<tr class="separator:a88f037eecc7692424c3b4ca7f10ea96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8fef3ab978abab9d817226a26b8ca5"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aec8fef3ab978abab9d817226a26b8ca5">SPHLFlogEntryGetNextShort</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:aec8fef3ab978abab9d817226a26b8ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next short int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#aec8fef3ab978abab9d817226a26b8ca5">More...</a><br /></td></tr>
-<tr class="separator:aec8fef3ab978abab9d817226a26b8ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12dfbeb9a0018c51e2505aa873fcd0be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a12dfbeb9a0018c51e2505aa873fcd0be">SPHLFlogEntryGetNextInt</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:a12dfbeb9a0018c51e2505aa873fcd0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#a12dfbeb9a0018c51e2505aa873fcd0be">More...</a><br /></td></tr>
-<tr class="separator:a12dfbeb9a0018c51e2505aa873fcd0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463e1622565d7283bf6d703b70dc29bd"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a463e1622565d7283bf6d703b70dc29bd">SPHLFlogEntryGetNextLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:a463e1622565d7283bf6d703b70dc29bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next long int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#a463e1622565d7283bf6d703b70dc29bd">More...</a><br /></td></tr>
-<tr class="separator:a463e1622565d7283bf6d703b70dc29bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1e9561a8fdff0a138bdc94b2059423"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#afe1e9561a8fdff0a138bdc94b2059423">SPHLFlogEntryGetNextPtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:afe1e9561a8fdff0a138bdc94b2059423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next void* from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#afe1e9561a8fdff0a138bdc94b2059423">More...</a><br /></td></tr>
-<tr class="separator:afe1e9561a8fdff0a138bdc94b2059423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32cc210c045df8a4045ad0daa244b085"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a32cc210c045df8a4045ad0daa244b085">SPHLFlogEntryGetNextLongLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:a32cc210c045df8a4045ad0daa244b085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next long long int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#a32cc210c045df8a4045ad0daa244b085">More...</a><br /></td></tr>
-<tr class="separator:a32cc210c045df8a4045ad0daa244b085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57da95ad89d288785aca05a47a10e1a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ac57da95ad89d288785aca05a47a10e1a">SPHLFlogEntryGetNextFloat</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:ac57da95ad89d288785aca05a47a10e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next float from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#ac57da95ad89d288785aca05a47a10e1a">More...</a><br /></td></tr>
-<tr class="separator:ac57da95ad89d288785aca05a47a10e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32aebb1f0bf1ca9e23da04a75e0e0f4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a32aebb1f0bf1ca9e23da04a75e0e0f4b">SPHLFlogEntryGetNextDouble</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
-<tr class="memdesc:a32aebb1f0bf1ca9e23da04a75e0e0f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next double from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#a32aebb1f0bf1ca9e23da04a75e0e0f4b">More...</a><br /></td></tr>
-<tr class="separator:a32aebb1f0bf1ca9e23da04a75e0e0f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e2f37c84a9dd05d2e98fd21a12c36a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a24e2f37c84a9dd05d2e98fd21a12c36a">SPHLFLogEntryStrongComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:a24e2f37c84a9dd05d2e98fd21a12c36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes any memory barriers required by the platform to ensure that all previous stores to this entry by this thread are visible to other threads.  <a href="#a24e2f37c84a9dd05d2e98fd21a12c36a">More...</a><br /></td></tr>
+<tr class="separator:a24e2f37c84a9dd05d2e98fd21a12c36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d19cda09ecda87c2677bd16d250f71"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a71d19cda09ecda87c2677bd16d250f71">SPHLFLogEntryWeakComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:a71d19cda09ecda87c2677bd16d250f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. No memory barriers are performance. On out-of-order machines there are no guarantee that all previous stores by this thread are visible to other threads.  <a href="#a71d19cda09ecda87c2677bd16d250f71">More...</a><br /></td></tr>
+<tr class="separator:a71d19cda09ecda87c2677bd16d250f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02b38ca9d77f83da11c28bb9c094f87"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ab02b38ca9d77f83da11c28bb9c094f87">SPHLFLogEntryComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:ab02b38ca9d77f83da11c28bb9c094f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the entry specified by the entry handle as complete. Also executes write memory barries required by the platform to ensure that all previous stores by this thread to this entry are complete. On out-of-order machines this barrier does not guarantee that all previous stores by this thread are visible to other threads.  <a href="#ab02b38ca9d77f83da11c28bb9c094f87">More...</a><br /></td></tr>
+<tr class="separator:ab02b38ca9d77f83da11c28bb9c094f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca76a4f3a58173f0ca13713adef3a2bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aca76a4f3a58173f0ca13713adef3a2bb">SPHLFLogEntryIsComplete</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:aca76a4f3a58173f0ca13713adef3a2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the entry handle.  <a href="#aca76a4f3a58173f0ca13713adef3a2bb">More...</a><br /></td></tr>
+<tr class="separator:aca76a4f3a58173f0ca13713adef3a2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c06400c08debfddc028849381b4d569"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a3c06400c08debfddc028849381b4d569">SPHLFLogEntryIsTimestamped</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:a3c06400c08debfddc028849381b4d569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the status of the entry specified by the entry handle.  <a href="#a3c06400c08debfddc028849381b4d569">More...</a><br /></td></tr>
+<tr class="separator:a3c06400c08debfddc028849381b4d569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a75a87871d4bdb483a92d8a8ffdd8a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="sphtimer_8h.html#a2075c191959b463818a251bc7a9372dd">sphtimer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a91a75a87871d4bdb483a92d8a8ffdd8a">SPHLFLogEntryTimeStamp</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:a91a75a87871d4bdb483a92d8a8ffdd8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the time stamp value for the entry specified by the entry handle.  <a href="#a91a75a87871d4bdb483a92d8a8ffdd8a">More...</a><br /></td></tr>
+<tr class="separator:a91a75a87871d4bdb483a92d8a8ffdd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c21c76b0b2acf23be72967d7f585d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#af3c21c76b0b2acf23be72967d7f585d3">SPHLFLogEntryPID</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:af3c21c76b0b2acf23be72967d7f585d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the process ID for the entry specified by the entry handle.  <a href="#af3c21c76b0b2acf23be72967d7f585d3">More...</a><br /></td></tr>
+<tr class="separator:af3c21c76b0b2acf23be72967d7f585d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1c5f4478f0c957577658ef90e6e315"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#abc1c5f4478f0c957577658ef90e6e315">SPHLFLogEntryTID</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:abc1c5f4478f0c957577658ef90e6e315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the thread ID for the entry specified by the entry handle.  <a href="#abc1c5f4478f0c957577658ef90e6e315">More...</a><br /></td></tr>
+<tr class="separator:abc1c5f4478f0c957577658ef90e6e315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5155ba079c49c2cb5baf20bf330e87c1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structSPHLFLogHeader__t.html">SPHLFLogHeader_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a5155ba079c49c2cb5baf20bf330e87c1">SPHLFLogEntryHeader</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:a5155ba079c49c2cb5baf20bf330e87c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the address for the entry header specified by the entry handle.  <a href="#a5155ba079c49c2cb5baf20bf330e87c1">More...</a><br /></td></tr>
+<tr class="separator:a5155ba079c49c2cb5baf20bf330e87c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc871e0a3c447918582f9facd2390b09"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#adc871e0a3c447918582f9facd2390b09">SPHLFLogEntryCategory</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:adc871e0a3c447918582f9facd2390b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry category for the entry specified by the entry handle.  <a href="#adc871e0a3c447918582f9facd2390b09">More...</a><br /></td></tr>
+<tr class="separator:adc871e0a3c447918582f9facd2390b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8099ead0eff9b3f124e1ab30e8c840c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ac8099ead0eff9b3f124e1ab30e8c840c">SPHLFLogEntrySubcat</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handlespace)</td></tr>
+<tr class="memdesc:ac8099ead0eff9b3f124e1ab30e8c840c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the entry sub-category for the entry specified by the entry handle.  <a href="#ac8099ead0eff9b3f124e1ab30e8c840c">More...</a><br /></td></tr>
+<tr class="separator:ac8099ead0eff9b3f124e1ab30e8c840c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4ac1c9fa0603f87245007906d164e9"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a9f4ac1c9fa0603f87245007906d164e9">SPHLFLogEntryGetFreePtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:a9f4ac1c9fa0603f87245007906d164e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the address first free byte for the entry specified by the entry handle.  <a href="#a9f4ac1c9fa0603f87245007906d164e9">More...</a><br /></td></tr>
+<tr class="separator:a9f4ac1c9fa0603f87245007906d164e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36603864a36feb93a87b668962c6b226"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a36603864a36feb93a87b668962c6b226">SPHLFlogEntryGetStructPtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, unsigned long __size, unsigned long __align)</td></tr>
+<tr class="memdesc:a36603864a36feb93a87b668962c6b226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the correctly aligned pointer for a struct or array starting at the next free location within the logger entry.  <a href="#a36603864a36feb93a87b668962c6b226">More...</a><br /></td></tr>
+<tr class="separator:a36603864a36feb93a87b668962c6b226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840a489d9e27cf643e921409680dbb3e"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a840a489d9e27cf643e921409680dbb3e">SPHLFlogEntryAllocStruct</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, unsigned long __size, unsigned long __align)</td></tr>
+<tr class="memdesc:a840a489d9e27cf643e921409680dbb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for struct starting at the next free location within the logger entry.  <a href="#a840a489d9e27cf643e921409680dbb3e">More...</a><br /></td></tr>
+<tr class="separator:a840a489d9e27cf643e921409680dbb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8098f71e35ca903ec49488d6d0bdc06"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ab8098f71e35ca903ec49488d6d0bdc06">SPHLFlogEntryAddString</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, char *value)</td></tr>
+<tr class="memdesc:ab8098f71e35ca903ec49488d6d0bdc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a C string at the next free location within the logger entry.  <a href="#ab8098f71e35ca903ec49488d6d0bdc06">More...</a><br /></td></tr>
+<tr class="separator:ab8098f71e35ca903ec49488d6d0bdc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe1711694442ff01440c8e636bdfb44"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#adfe1711694442ff01440c8e636bdfb44">SPHLFlogEntryAddChar</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, char value)</td></tr>
+<tr class="memdesc:adfe1711694442ff01440c8e636bdfb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a character at the next free location within the logger entry.  <a href="#adfe1711694442ff01440c8e636bdfb44">More...</a><br /></td></tr>
+<tr class="separator:adfe1711694442ff01440c8e636bdfb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d137e605c2bbfbe2e300be4d0ce253b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a6d137e605c2bbfbe2e300be4d0ce253b">SPHLFlogEntryAddShort</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, short int value)</td></tr>
+<tr class="memdesc:a6d137e605c2bbfbe2e300be4d0ce253b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a short int at the next free location within the logger entry.  <a href="#a6d137e605c2bbfbe2e300be4d0ce253b">More...</a><br /></td></tr>
+<tr class="separator:a6d137e605c2bbfbe2e300be4d0ce253b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf8acf72b23b373e7131545386617ec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#abdf8acf72b23b373e7131545386617ec">SPHLFlogEntryAddInt</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, int value)</td></tr>
+<tr class="memdesc:abdf8acf72b23b373e7131545386617ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a int at the next free location within the logger entry.  <a href="#abdf8acf72b23b373e7131545386617ec">More...</a><br /></td></tr>
+<tr class="separator:abdf8acf72b23b373e7131545386617ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53b7aa19814d95b8b8c7115ed4ff44a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#af53b7aa19814d95b8b8c7115ed4ff44a">SPHLFlogEntryAddLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, long value)</td></tr>
+<tr class="memdesc:af53b7aa19814d95b8b8c7115ed4ff44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a long int at the next free location within the logger entry.  <a href="#af53b7aa19814d95b8b8c7115ed4ff44a">More...</a><br /></td></tr>
+<tr class="separator:af53b7aa19814d95b8b8c7115ed4ff44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f9088cce556fbeface6136c63ab88d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a50f9088cce556fbeface6136c63ab88d">SPHLFlogEntryAddPtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, void *value)</td></tr>
+<tr class="memdesc:a50f9088cce556fbeface6136c63ab88d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a void* at the next free location within the logger entry.  <a href="#a50f9088cce556fbeface6136c63ab88d">More...</a><br /></td></tr>
+<tr class="separator:a50f9088cce556fbeface6136c63ab88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea52f07ce181cea011a1e124c5f88c6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a3ea52f07ce181cea011a1e124c5f88c6">SPHLFlogEntryAddLongLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, long long value)</td></tr>
+<tr class="memdesc:a3ea52f07ce181cea011a1e124c5f88c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a long long int at the next free location within the logger entry.  <a href="#a3ea52f07ce181cea011a1e124c5f88c6">More...</a><br /></td></tr>
+<tr class="separator:a3ea52f07ce181cea011a1e124c5f88c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd3226f621ffa7ff72a5f0b90be70e2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a6bd3226f621ffa7ff72a5f0b90be70e2">SPHLFlogEntryAddFloat</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, float value)</td></tr>
+<tr class="memdesc:a6bd3226f621ffa7ff72a5f0b90be70e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a float at the next free location within the logger entry.  <a href="#a6bd3226f621ffa7ff72a5f0b90be70e2">More...</a><br /></td></tr>
+<tr class="separator:a6bd3226f621ffa7ff72a5f0b90be70e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f65e43c919592b79f2cbf5df2219bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ae1f65e43c919592b79f2cbf5df2219bb">SPHLFlogEntryAddDouble</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle, double value)</td></tr>
+<tr class="memdesc:ae1f65e43c919592b79f2cbf5df2219bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a double at the next free location within the logger entry.  <a href="#ae1f65e43c919592b79f2cbf5df2219bb">More...</a><br /></td></tr>
+<tr class="separator:ae1f65e43c919592b79f2cbf5df2219bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94919bf913bc48e5dfbee6dd6193e0e"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#af94919bf913bc48e5dfbee6dd6193e0e">SPHLFlogEntryGetNextChar</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:af94919bf913bc48e5dfbee6dd6193e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next char from the logger entry via the current next value pointer. The internal next value pointer is advanced to the next location.  <a href="#af94919bf913bc48e5dfbee6dd6193e0e">More...</a><br /></td></tr>
+<tr class="separator:af94919bf913bc48e5dfbee6dd6193e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea839cb7ac26ba826d411d6d2cdd96ab"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aea839cb7ac26ba826d411d6d2cdd96ab">SPHLFlogEntryGetNextString</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:aea839cb7ac26ba826d411d6d2cdd96ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the pointer to the next C string from the logger entry via the current next value pointer. The internal next value pointer is advanced to the next location after the string NUL char.  <a href="#aea839cb7ac26ba826d411d6d2cdd96ab">More...</a><br /></td></tr>
+<tr class="separator:aea839cb7ac26ba826d411d6d2cdd96ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f270eeef426642499b505b24cf79a0"><td class="memItemLeft" align="right" valign="top">static short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a73f270eeef426642499b505b24cf79a0">SPHLFlogEntryGetNextShort</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:a73f270eeef426642499b505b24cf79a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next short int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#a73f270eeef426642499b505b24cf79a0">More...</a><br /></td></tr>
+<tr class="separator:a73f270eeef426642499b505b24cf79a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae95fa324064134fa689203808815261"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aae95fa324064134fa689203808815261">SPHLFlogEntryGetNextInt</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:aae95fa324064134fa689203808815261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#aae95fa324064134fa689203808815261">More...</a><br /></td></tr>
+<tr class="separator:aae95fa324064134fa689203808815261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1792eb45fea8a31c2f4f8737cebeb659"><td class="memItemLeft" align="right" valign="top">static long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#a1792eb45fea8a31c2f4f8737cebeb659">SPHLFlogEntryGetNextLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:a1792eb45fea8a31c2f4f8737cebeb659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next long int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#a1792eb45fea8a31c2f4f8737cebeb659">More...</a><br /></td></tr>
+<tr class="separator:a1792eb45fea8a31c2f4f8737cebeb659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab605112416999b046dcd91c04e03e76d"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ab605112416999b046dcd91c04e03e76d">SPHLFlogEntryGetNextPtr</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:ab605112416999b046dcd91c04e03e76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next void* from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#ab605112416999b046dcd91c04e03e76d">More...</a><br /></td></tr>
+<tr class="separator:ab605112416999b046dcd91c04e03e76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35c5f050ffa3810941a34cc80b9aadf"><td class="memItemLeft" align="right" valign="top">static long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#aa35c5f050ffa3810941a34cc80b9aadf">SPHLFlogEntryGetNextLongLong</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:aa35c5f050ffa3810941a34cc80b9aadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next long long int from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#aa35c5f050ffa3810941a34cc80b9aadf">More...</a><br /></td></tr>
+<tr class="separator:aa35c5f050ffa3810941a34cc80b9aadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecc3146c23e04294532b80a573e294e"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#afecc3146c23e04294532b80a573e294e">SPHLFlogEntryGetNextFloat</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:afecc3146c23e04294532b80a573e294e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next float from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#afecc3146c23e04294532b80a573e294e">More...</a><br /></td></tr>
+<tr class="separator:afecc3146c23e04294532b80a573e294e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80e5c5b6dcd4fe1e89ae1985b68f315"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sphlflogentry_8h.html#ad80e5c5b6dcd4fe1e89ae1985b68f315">SPHLFlogEntryGetNextDouble</a> (<a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *handle)</td></tr>
+<tr class="memdesc:ad80e5c5b6dcd4fe1e89ae1985b68f315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the next double from the logger entry via the current next value pointer. Leading bytes may be skipped to get the required alignment. The internal next value pointer is advanced to the next location.  <a href="#ad80e5c5b6dcd4fe1e89ae1985b68f315">More...</a><br /></td></tr>
+<tr class="separator:ad80e5c5b6dcd4fe1e89ae1985b68f315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Shared Persistent Heap, logger entry status, update and access functions. </p>
@@ -242,7 +242,7 @@ Functions</h2></td></tr>
 </pre></dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>This API should be migrated to use the common <a class="el" href="sphlfentry_8h.html" title="Shared Persistent Heap, logger/queue etc event entry status, update, and access functions. ">sphlfentry.h</a> API. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae0d2e43bf4178c6cad7d2cf9a06a0830"></a>
+<a class="anchor" id="adfe1711694442ff01440c8e636bdfb44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -250,7 +250,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddChar </td>
+          <td class="memname">static int SPHLFlogEntryAddChar </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -269,7 +269,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -286,7 +286,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8810e4f12395a9b6a80f3cc6ab86bba1"></a>
+<a class="anchor" id="ae1f65e43c919592b79f2cbf5df2219bb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -294,7 +294,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddDouble </td>
+          <td class="memname">static int SPHLFlogEntryAddDouble </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -330,7 +330,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0da1364adade000f1b2e7da24048a855"></a>
+<a class="anchor" id="a6bd3226f621ffa7ff72a5f0b90be70e2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -338,7 +338,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddFloat </td>
+          <td class="memname">static int SPHLFlogEntryAddFloat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -357,7 +357,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -374,7 +374,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4efbdf0e3f7382506b41c77b05a6707e"></a>
+<a class="anchor" id="abdf8acf72b23b373e7131545386617ec"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -382,7 +382,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddInt </td>
+          <td class="memname">static int SPHLFlogEntryAddInt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -401,7 +401,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -418,7 +418,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abf68eac639cf19de0f976d8d62a64324"></a>
+<a class="anchor" id="af53b7aa19814d95b8b8c7115ed4ff44a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -426,7 +426,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddLong </td>
+          <td class="memname">static int SPHLFlogEntryAddLong </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -445,7 +445,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -462,7 +462,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1ae40701df169200627462edf85da7fd"></a>
+<a class="anchor" id="a3ea52f07ce181cea011a1e124c5f88c6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -470,7 +470,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddLongLong </td>
+          <td class="memname">static int SPHLFlogEntryAddLongLong </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -489,7 +489,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -506,7 +506,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a38c30e6025b0bbff727baf588bbb2e1e"></a>
+<a class="anchor" id="a50f9088cce556fbeface6136c63ab88d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -514,7 +514,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddPtr </td>
+          <td class="memname">static int SPHLFlogEntryAddPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -533,7 +533,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -550,7 +550,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a515792e8e34afb8adef031270554b2ca"></a>
+<a class="anchor" id="a6d137e605c2bbfbe2e300be4d0ce253b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -558,7 +558,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddShort </td>
+          <td class="memname">static int SPHLFlogEntryAddShort </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -577,7 +577,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -594,7 +594,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a645598dc1663b0f894a8ded3ddf48360"></a>
+<a class="anchor" id="ab8098f71e35ca903ec49488d6d0bdc06"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -602,7 +602,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryAddString </td>
+          <td class="memname">static int SPHLFlogEntryAddString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -621,7 +621,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -638,7 +638,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7652c49a66c32701f1cc6c00d34e7552"></a>
+<a class="anchor" id="a840a489d9e27cf643e921409680dbb3e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -646,7 +646,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFlogEntryAllocStruct </td>
+          <td class="memname">static void* SPHLFlogEntryAllocStruct </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -671,7 +671,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -691,7 +691,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5cce137b9fc8602499ed399ec08f5ccf"></a>
+<a class="anchor" id="adc871e0a3c447918582f9facd2390b09"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -699,7 +699,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntryCategory </td>
+          <td class="memname">static int SPHLFLogEntryCategory </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -708,7 +708,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -724,7 +724,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2c48e0285bce4b8bb43e91f1a75e0582"></a>
+<a class="anchor" id="ab02b38ca9d77f83da11c28bb9c094f87"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -732,7 +732,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntryComplete </td>
+          <td class="memname">static int SPHLFLogEntryComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -741,7 +741,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -757,7 +757,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae13346f87e1ce85543fe11deba58f5f1"></a>
+<a class="anchor" id="a9f4ac1c9fa0603f87245007906d164e9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -765,7 +765,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFLogEntryGetFreePtr </td>
+          <td class="memname">static void* SPHLFLogEntryGetFreePtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -774,7 +774,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -792,7 +792,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4506e4cabd88e840bcd1eb6c21db5fb3"></a>
+<a class="anchor" id="af94919bf913bc48e5dfbee6dd6193e0e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -800,7 +800,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char SPHLFlogEntryGetNextChar </td>
+          <td class="memname">static char SPHLFlogEntryGetNextChar </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -809,7 +809,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -825,7 +825,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a32aebb1f0bf1ca9e23da04a75e0e0f4b"></a>
+<a class="anchor" id="ad80e5c5b6dcd4fe1e89ae1985b68f315"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -833,7 +833,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double SPHLFlogEntryGetNextDouble </td>
+          <td class="memname">static double SPHLFlogEntryGetNextDouble </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -842,7 +842,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -858,7 +858,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac57da95ad89d288785aca05a47a10e1a"></a>
+<a class="anchor" id="afecc3146c23e04294532b80a573e294e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -866,7 +866,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float SPHLFlogEntryGetNextFloat </td>
+          <td class="memname">static float SPHLFlogEntryGetNextFloat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -875,7 +875,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -891,7 +891,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a12dfbeb9a0018c51e2505aa873fcd0be"></a>
+<a class="anchor" id="aae95fa324064134fa689203808815261"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -899,7 +899,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFlogEntryGetNextInt </td>
+          <td class="memname">static int SPHLFlogEntryGetNextInt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -908,7 +908,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -924,7 +924,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a463e1622565d7283bf6d703b70dc29bd"></a>
+<a class="anchor" id="a1792eb45fea8a31c2f4f8737cebeb659"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -932,7 +932,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">long SPHLFlogEntryGetNextLong </td>
+          <td class="memname">static long SPHLFlogEntryGetNextLong </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -941,7 +941,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -957,7 +957,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a32cc210c045df8a4045ad0daa244b085"></a>
+<a class="anchor" id="aa35c5f050ffa3810941a34cc80b9aadf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -965,7 +965,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">long long SPHLFlogEntryGetNextLongLong </td>
+          <td class="memname">static long long SPHLFlogEntryGetNextLongLong </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -974,7 +974,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -990,7 +990,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afe1e9561a8fdff0a138bdc94b2059423"></a>
+<a class="anchor" id="ab605112416999b046dcd91c04e03e76d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -998,7 +998,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFlogEntryGetNextPtr </td>
+          <td class="memname">static void* SPHLFlogEntryGetNextPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -1007,7 +1007,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1023,7 +1023,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec8fef3ab978abab9d817226a26b8ca5"></a>
+<a class="anchor" id="a73f270eeef426642499b505b24cf79a0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1031,7 +1031,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">short int SPHLFlogEntryGetNextShort </td>
+          <td class="memname">static short int SPHLFlogEntryGetNextShort </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -1040,7 +1040,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1056,7 +1056,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a88f037eecc7692424c3b4ca7f10ea96f"></a>
+<a class="anchor" id="aea839cb7ac26ba826d411d6d2cdd96ab"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1064,7 +1064,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char* SPHLFlogEntryGetNextString </td>
+          <td class="memname">static char* SPHLFlogEntryGetNextString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -1073,7 +1073,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1089,7 +1089,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab1d5f149afbb63a90d2bf2a461936a06"></a>
+<a class="anchor" id="a36603864a36feb93a87b668962c6b226"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1097,7 +1097,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* SPHLFlogEntryGetStructPtr </td>
+          <td class="memname">static void* SPHLFlogEntryGetStructPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -1122,7 +1122,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1142,7 +1142,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee6f50aa6c65f7862071066588efeaad"></a>
+<a class="anchor" id="a5155ba079c49c2cb5baf20bf330e87c1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1150,7 +1150,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structSPHLFLogHeader__t.html">SPHLFLogHeader_t</a>* SPHLFLogEntryHeader </td>
+          <td class="memname">static <a class="el" href="structSPHLFLogHeader__t.html">SPHLFLogHeader_t</a>* SPHLFLogEntryHeader </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1159,7 +1159,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1175,7 +1175,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a24b5c418e935b72ee0c7fe5c803e0cf0"></a>
+<a class="anchor" id="aca76a4f3a58173f0ca13713adef3a2bb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1183,7 +1183,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntryIsComplete </td>
+          <td class="memname">static int SPHLFLogEntryIsComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1192,7 +1192,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1208,7 +1208,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8d07e65a75a3b139982167edaf910696"></a>
+<a class="anchor" id="a3c06400c08debfddc028849381b4d569"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1216,7 +1216,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntryIsTimestamped </td>
+          <td class="memname">static int SPHLFLogEntryIsTimestamped </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1225,7 +1225,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1241,7 +1241,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8664b111329ebc341e57e4c79ae2e5ab"></a>
+<a class="anchor" id="af3c21c76b0b2acf23be72967d7f585d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1249,7 +1249,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a> SPHLFLogEntryPID </td>
+          <td class="memname">static <a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a> SPHLFLogEntryPID </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1258,7 +1258,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1274,7 +1274,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a242ad8d63fd2bb13b23a5e2665545d25"></a>
+<a class="anchor" id="a24e2f37c84a9dd05d2e98fd21a12c36a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1282,7 +1282,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntryStrongComplete </td>
+          <td class="memname">static int SPHLFLogEntryStrongComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1291,7 +1291,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1307,7 +1307,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa31c35c29c2aa7ff9744190687f8b3d5"></a>
+<a class="anchor" id="ac8099ead0eff9b3f124e1ab30e8c840c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1315,7 +1315,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntrySubcat </td>
+          <td class="memname">static int SPHLFLogEntrySubcat </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1324,7 +1324,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1340,7 +1340,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab175a33b9473897159133b2deb67ea47"></a>
+<a class="anchor" id="abc1c5f4478f0c957577658ef90e6e315"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1348,7 +1348,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a> SPHLFLogEntryTID </td>
+          <td class="memname">static <a class="el" href="sphlflogger_8h.html#a85dc2178807f9e94405281afc0acdff6">sphpid16_t</a> SPHLFLogEntryTID </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1357,7 +1357,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1373,7 +1373,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a18b9105fb237a06271031c7aaa6fc96b"></a>
+<a class="anchor" id="a91a75a87871d4bdb483a92d8a8ffdd8a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1381,7 +1381,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="sphtimer_8h.html#a2075c191959b463818a251bc7a9372dd">sphtimer_t</a> SPHLFLogEntryTimeStamp </td>
+          <td class="memname">static <a class="el" href="sphtimer_8h.html#a2075c191959b463818a251bc7a9372dd">sphtimer_t</a> SPHLFLogEntryTimeStamp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1390,7 +1390,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1406,7 +1406,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a56b54482f6d8acaff0d4ef3fb9b1afe8"></a>
+<a class="anchor" id="a71d19cda09ecda87c2677bd16d250f71"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1414,7 +1414,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int SPHLFLogEntryWeakComplete </td>
+          <td class="memname">static int SPHLFLogEntryWeakComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSPHLFLoggerHandle__t.html">SPHLFLoggerHandle_t</a> *&#160;</td>
           <td class="paramname"><em>handlespace</em></td><td>)</td>
@@ -1423,7 +1423,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1442,7 +1442,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

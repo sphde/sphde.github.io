@@ -196,6 +196,11 @@ Variables</h2></td></tr>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>The current runtime restricts blocks to segment size or smaller. Creating larger blocks would require creating (power of 2) multiple segments (and backing files which have to memory mapped) while holding the global anchor block lock. Future releases may remove this restriction.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Segments and blocks inherit their virtual address (within the process) from the region. The region has a fixed starting address and segments always have a unique offset (and file index) within the region. The segment's file index is used to generate the unique file name within the SAS store directory. Obviously blocks inherit their virtual address from the containing segment which inherits from the region.</dd></dl>
 <p>The segment is the granule of backing file allocation and memory mapping. Segment backing files are always extended to the full segment size at creation. This minimizes OS overhead by minimizing file system and memory mapping operations at runtime. Segments are not allocated (and backing files created) until additional block space is needed (when free block space, of the required size and alignment, in currently allocated segments, is depleted). This is done implicitly under the block allocate call.</p>
+<dl class="section note"><dt>Note</dt><dd>SASJoinRegion and related functions (SASTHreadSetUp) establish a sigaction handler for signal SIGSEGV. This handles the case when one process, sharing a named Region allocates a new segment and backing. Other processes (sharing the same Region) are not immediately aware of this and need not perform any specific actions until or unless that process references data in that segment. This will generate a SIGSEGV and the SAS sigaction handler will attach this segment by mmapping the associated backing file into the faulting process at the assigned address.</dd>
+<dd>
+Applications that set their own signal to sigaction handlers for SIGSEGV should be aware of this and plan for proper nesting. Applications should establish their SIGSEGV handlers before joining. The SASJoinRegion will preserve the the "old action" as part of setting it own SIGSEGV handler.</dd>
+<dd>
+When the SPHDE runtime handler gets control it will verify that the faulting address is within the SAS Region. If it is not, it is likely a error or something that the application should handle itself. The SPHDE runtime handler will check if the "old action" was SIG_DFL or has it own signal or sigaction handler. If the application defined it own handler SPHDE will attempt to call that handler. Otherwise SPHDE runtime handler will print a back trace and exit the effected process (or thread).</dd></dl>
 <p>The runtime also sets up shared memory segments (shmat) for SAS locks. SAS locks need to be shared but should not persist across reboot (like memory mapped files do). Different SAS stores must have independent locks (different lock segments). So lock segments are allocated/attached via shmget/shmat using a key generated (ftok) from the SAS Store path. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a6fe774501e33d06b7dcee51d6b54bd22"></a>
@@ -849,7 +854,7 @@ Threaded applications should pthread_join their child threads before this call. 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

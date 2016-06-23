@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 <li>Passing Logger event allocation requests through to the current Logger.</li>
 <li>Advancing the Current logger to next free Logger when the current Logger fills up.</li>
 </ol>
-<p>A portal is used when the required capacity for logger entries exceeds that posible for a single logger. Or we need to support rolling/continous logs over a long period of time. By switching out filled loggers with new/empty loggers, logging can continue indeffinitely. </p>
+<p>A portal is used when the required capacity for logger entries exceeds that posible for a single logger. Or we need to support rolling/continuous logs over a long period of time. By switching out filled loggers with new/empty loggers, logging can continue indeffinitely. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a6ad505308f62af2bbe9843f24940f38a"></a>
 <div class="memitem">
@@ -258,7 +258,7 @@ Functions</h2></td></tr>
 <p>Returns the handle of the current logger entry for the current logger for the provided Portal Iterator. The logger entry handle can of then be used to access the contents of the logger entry. The iterator is advanced to the next logger entry. If the iterator is positioned at the end of the current logger then the iterator will be advanced to the first entry of the next logger allocated to this portal. If we are at the end of the list of allocated loggers we are done.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iterator</td><td>Handle asociated with a Log Portal. </td></tr>
+    <tr><td class="paramname">iterator</td><td>Handle associated with a Log Portal. </td></tr>
     <tr><td class="paramname">handlespace</td><td>Address of local area that will be initialied as a <a class="el" href="structSPHLFLoggerHandle__t.html" title="Instance of a Lock Free Logger Entry Handle. ">SPHLFLoggerHandle_t</a> for the allocated entry. </td></tr>
   </table>
   </dd>
@@ -700,7 +700,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -118,6 +118,7 @@ SAS Overview</h1>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The application must first "join" a region before allocating or accessing any blocks. If the region does not exist (has no backing files), a "join" will create the initial segment (backing file) and initialize the anchor block.</dd></dl>
 <p>By default the region's path name is either "." or the current directory. The region name can be overridden by setting the "SASSTOREPATH" environment variable, or using the <a class="el" href="sassim_8h.html#a2b000ff09648bb379c63cdcb85613010" title="Join this process to a named SAS Region. ">SASJoinRegionByName()</a> function. The "region" name is the path to a directory where the SAS/SPH backing files will be created.</p>
 <p>Processes that join with the same region name will share the region and all of its (allocated) storage. All processes that share a region can allocate, deallocate, reference and update blocks (normal C pointer semantics) within the region.</p>
+<dl class="section note"><dt>Note</dt><dd>To insure that segments of memory allocated by one process, can be accessed by any other process sharing a SAS Region, the SPHDE runtime establishes a sigaction handler for SIGSEGV within each process and thread. This is enabled as part of the Join process and remains enabled until the process leaves Region by calling SASCleanup. Applications that use signal/sigaction handlers should be aware of this.</dd></dl>
 <p>Processes that use a different region name are independent from any other region and only see the region that they have joined. There is no limit to the number of independent regions per process other than those imposed by the file system. Normal file access rules apply. Any process that does not have read/write authority to the region's directory or files can not join the region or access the data.</p>
 <p>Once a block is allocated it is backed with file storage, and implicitly mmaped for transparent storage persistence and sharing between processes. The block will always be mapped at the same virtual address each time it is loaded and for each sharing process. This allows complex pointer based data structures to be stored, persisted, and shared without additional effort (the pointers are context independent).</p>
 <h2><a class="anchor" id="lockSection"></a>
@@ -217,6 +218,7 @@ General Utility Objects</h2>
 <li><a class="el" href="sassimplestack_8h.html" title="Shared Address Space Simple Stack. Allocate a SAS block as stack. ">sassimplestack.h</a> SAS Simple Stack</li>
 <li><a class="el" href="sassimpleheap_8h.html" title="Shared Address Space Simple Heap. ">sassimpleheap.h</a> SAS Simple Heap</li>
 <li><a class="el" href="sascompoundheap_8h.html" title="Shared Address Space Compound Heap. ">sascompoundheap.h</a> SAS Compound Heap; expanding heap of Simple Heaps</li>
+<li><a class="el" href="sphcompoundpcqheap_8h.html" title="Shared Address Space Compound Heap, PCQueue extension. ">sphcompoundpcqheap.h</a> SAS Compound Heap extension; expanding heap of PCQueues</li>
 </ul>
 <h2><a class="anchor" id="SASIndex"></a>
 Maps, indexes and Contexts</h2>
@@ -248,7 +250,7 @@ MultiCore Utility functions</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:10 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

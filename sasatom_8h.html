@@ -104,6 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:adbba0f726fc66d7100916c683b7568ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbba0f726fc66d7100916c683b7568ae"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GCC_VERSION</b>&#160;&#160;&#160;(__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)</td></tr>
+<tr class="separator:adbba0f726fc66d7100916c683b7568ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3475ce180ff0fad6f8163c424f585bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#af3475ce180ff0fad6f8163c424f585bf">sas_write_barrier</a>()&#160;&#160;&#160;__arch_sas_write_barrier()</td></tr>
 <tr class="separator:af3475ce180ff0fad6f8163c424f585bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64910ebba62c6ce2bc82eaa4bb17bde0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a64910ebba62c6ce2bc82eaa4bb17bde0">sas_read_barrier</a>()&#160;&#160;&#160;__arch_sas_read_barrier()</td></tr>
@@ -126,6 +129,14 @@ Functions</h2></td></tr>
 <tr class="separator:a03437a2888ac090cc7169da8d4ded69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaacabc6f2c0a0379b434d5acb0e5683"><td class="memItemLeft" align="right" valign="top">static long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#abaacabc6f2c0a0379b434d5acb0e5683">fetch_and_add</a> (void *pointer, long int delta)</td></tr>
 <tr class="separator:abaacabc6f2c0a0379b434d5acb0e5683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7df9e16590ca01c824043a3d4f2f664"><td class="memItemLeft" align="right" valign="top">static long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#aa7df9e16590ca01c824043a3d4f2f664">fetch_and_and</a> (unsigned int *pointer, int delta)</td></tr>
+<tr class="separator:aa7df9e16590ca01c824043a3d4f2f664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5db506d1c6b2c501f407aab6db70c1"><td class="memItemLeft" align="right" valign="top">static long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a3f5db506d1c6b2c501f407aab6db70c1">fetch_and_and_long</a> (unsigned long *pointer, long int delta)</td></tr>
+<tr class="separator:a3f5db506d1c6b2c501f407aab6db70c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e3aa3fa6d7cfd170e421a3cef6024c"><td class="memItemLeft" align="right" valign="top">static long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a53e3aa3fa6d7cfd170e421a3cef6024c">fetch_and_or</a> (unsigned int *pointer, int delta)</td></tr>
+<tr class="separator:a53e3aa3fa6d7cfd170e421a3cef6024c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa854da44455f486e146b7d3ba5cabea"><td class="memItemLeft" align="right" valign="top">static long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#aaa854da44455f486e146b7d3ba5cabea">fetch_and_or_long</a> (unsigned long *pointer, long int delta)</td></tr>
+<tr class="separator:aaa854da44455f486e146b7d3ba5cabea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba09b7c1b194f160c6062a9aaf4c13d1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#aba09b7c1b194f160c6062a9aaf4c13d1">compare_and_swap</a> (volatile long int *p, long int oldval, long int newval)</td></tr>
 <tr class="separator:aba09b7c1b194f160c6062a9aaf4c13d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299d67774ea4b0cbb5bab76df9cd30ff"><td class="memItemLeft" align="right" valign="top">static long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sasatom_8h.html#a299d67774ea4b0cbb5bab76df9cd30ff">atomic_swap</a> (long int *p, long int replace)</td></tr>
@@ -458,6 +469,154 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Atomic fetch and add operation on memory referenced by <em>pointer</em>.</p>
 <p>Performs the atomic operation: { tmp = **pointer; **pointer = tmp + delta; return *pointer }</p>
+<p>Returns <em>*pointer</em> before update. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa7df9e16590ca01c824043a3d4f2f664"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long int fetch_and_and </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atomic fetch and and operation on memory <em>pointer</em> of int type.</p>
+<p>Performs the atomic operation: { tmp = *pointer; *pointer = tmp &amp; delta; return *pointer }</p>
+<p>Returns <em>*pointer</em> before update. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3f5db506d1c6b2c501f407aab6db70c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long int fetch_and_and_long </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atomic fetch and and operation on memory <em>pointer</em> of long type.</p>
+<p>Performs the atomic operation: { tmp = *pointer; *pointer = tmp &amp; delta; return *pointer }</p>
+<p>Returns <em>*pointer</em> before update. </p>
+
+</div>
+</div>
+<a class="anchor" id="a53e3aa3fa6d7cfd170e421a3cef6024c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long int fetch_and_or </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atomic fetch and or operation on memory <em>pointer</em> of int type.</p>
+<p>Performs the atomic operation: { tmp = *pointer; *pointer = tmp | delta; return *pointer }</p>
+<p>Returns <em>*pointer</em> before update. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa854da44455f486e146b7d3ba5cabea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long int fetch_and_or_long </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long int&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atomic fetch and or operation on memory <em>pointer</em> of long type.</p>
+<p>Performs the atomic operation: { tmp = *pointer; *pointer = tmp | delta; return *pointer }</p>
 <p>Returns <em>*pointer</em> before update. </p>
 
 </div>
@@ -806,7 +965,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The function tried to lock <em>lock</em>. If the operation is successfull the function return 0 or 1 otherwise. </p>
+<p>The function tried to lock <em>lock</em>. If the operation is successful the function return 0 or 1 otherwise. </p>
 
 </div>
 </div>
@@ -838,7 +997,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 02:12:05 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 23 2016 08:36:09 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
