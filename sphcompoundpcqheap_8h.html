@@ -179,7 +179,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sub-Allocate a new SPH PCQueue from a SAS Compound Heaps internal space. </p>
-<p>Similar to ::SASCompoundPCQAlloc but does not take write lock the Compound Heap. This API assumes that the application is holding a write lock on the referenced Compound Heap. This allows an application to batch a group of allocations with less overhead.</p>
+<p>Similar to <a class="el" href="sphcompoundpcqheap_8h.html#ae5a89e785029082ea6a0e15d23d007d4" title="Sub-Allocate a new SPH PCQueue from a SAS Compound Heaps internal space. ">SPHCompoundPCQAlloc</a> but does not take write lock the Compound Heap. This API assumes that the application is holding a write lock on the referenced Compound Heap. This allows an application to batch a group of allocations with less overhead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">heap</td><td>Handle to the SASCompoundHeap_t. </td></tr>
@@ -251,7 +251,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Free the allocated SPH PCQueue <em>free_block</em> from SAS Compound Heap <em>heap</em>. </p>
-<p>Similar to ::SASCompoundPCQFree but does not take write lock the Compound Heap. This API assumes that the application is holding a write lock on the referenced Compound Heap. This allows an application to batch a group of frees with less overhead.</p>
+<p>Similar to <a class="el" href="sphcompoundpcqheap_8h.html#aeb09753bdb0d3afa0095336690828c46" title="Free the allocated SPH PCQueue block in the SAS Compound Heap heap. ">SPHCompoundPCQFree</a> but does not take write lock the Compound Heap. This API assumes that the application is holding a write lock on the referenced Compound Heap. This allows an application to batch a group of frees with less overhead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">heap</td><td>Handle to the SASCompoundHeap_t. </td></tr>
@@ -303,7 +303,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allocate a new SPH PCQueue from SAS Compound Heap <em>nearObj</em>. </p>
-<p>Similar to ::SASCompoundPCQNearAlloc but does not take write lock the Compound Heap. This API assumes that the application is holding a write lock on the referenced Compound Heap. This allows an application to batch a group of allocations with less overhead.</p>
+<p>Similar to <a class="el" href="sphcompoundpcqheap_8h.html#a29812c49ed1cd45068db58dfbbf8621a" title="Allocate a new SPH PCQueue from SAS Compound Heap nearObj. ">SPHCompoundPCQNearAlloc</a> but does not take write lock the Compound Heap. This API assumes that the application is holding a write lock on the referenced Compound Heap. This allows an application to batch a group of allocations with less overhead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nearObj</td><td>Memory address within a SASCompoundHeap_t. </td></tr>
@@ -317,7 +317,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 30 2016 07:46:25 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 11 2016 05:16:51 for Shared Persistent Heap Data Environment Manual by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
